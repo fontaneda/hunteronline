@@ -1,0 +1,113 @@
+﻿.cabecera{width:1000px; height:100px; background-color:#414141; margin:auto auto;}
+.logo_image{float: left; width: 250px; text-align: left; background-image: url('../images/background/logo_hunter_online_header1.png'); background-repeat: no-repeat; background-position: top center; background-size: 100% 100%; height: 100px;}
+.content_user{float: right; width: 310px; margin-right: 25px; height: 85px;}
+.content_user_info{float: left; width: 275px; height: 22px; margin-top: 2px; text-align: left; padding-left: 5px; font-size:1.2em; color:#fff;}
+.content_user_btn{float:left; width: 25px; height: 25px; margin:2px 1px 0px 0px;}
+.panelprincipal{width:100%; height:50px; margin-top:5px; float:right;}
+.icono_carro{background:url(../images/background/CartAmarillo2.png) no-repeat left 0; width:35px; height:35px; margin-top:5px; background-position:bottom left !important;float:left;}
+.labeliconocarro{margin: 10px 0px 0px 12px; color:#fff; text-align:center; font-size:1em; font-weight:bold;}
+.content_confirmardato_totales_labeldivisionprincipal{float:left; width:80%; height:35px; margin:20px 1px 2px 2px; padding:3px 1px 0 1px; border-top:1px solid #FFC000;}
+.divproducto{width:1000px; height:350px; margin:auto auto; font-family:Calibri;}
+.divextras{width:1000px; height:300px; margin:auto auto;font-family:Calibri;}
+.divtarjetas{width:100%; height:60px;font-size:0.8em;background: rgb(223,223,223); background:-moz-linear-gradient(top, rgba(223,223,223,1) 0%, rgba(244,247,249,1) 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,223,223,1)), color-stop(100%,rgba(244,247,249,1))); background:-webkit-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%);background:-o-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%); background:-ms-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%);background:linear-gradient(to bottom,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#f4f7f9',GradientType=0 );}
+.divfacturacion{width:50%;height:200px;float:left;font-size:0.8em;margin-top:5px;}
+.divresumen{width:50%;height:200px;float:left;font-size:0.8em;}
+.divpagar{width:100%;height:90px;float:left;font-size:0.8em;}
+.divbaners{width:100%;height:45px;float:left;}
+.divtarjetasemisores{width:66%; height:100%; float:left; margin-left:2px;}
+.divtarjetasbancos{width:33%; height:100%; float:left; margin-left:2px;}
+.divtarjetastipos{width:33%; height:100%; float:left; margin-left:2px;}
+.seccion_forma_pago_titulo001{float:left; font-weight:bold; width:100%; height:15px; margin:0px 0px 5px 10px; color:#646565;}
+.content_renovacion_formapago_control{width:100%; height:30px; float:left; margin:0px 0px 0px 0px; } 
+.content_renovacion_formapago_controlBoton{width:auto;height:auto;float:left;position:relative;margin:0px 0px 0px 25px;text-align:left;}      
+.seccion_forma_pago_titulo002{float:left; font-weight:bold; width:100%; height:15px; margin:0px 0px 10px 10px; color:#646565;}
+.content_renovacion_formapago_informacion_label{float: left;width: 150px;height: 12px;margin: 2px 1px 2px 10px;padding: 3px 1px 0 1px;text-align: left;}
+.content_renovacion_formapago_informacion_textbox{float: left;width: 200px;height: 22px;margin: 2px 1px 2px 2px;padding: 1px 5px 1px 1px;text-align: left;}
+.column04_cell_button{float: left;height: 20px;width: 20px;margin: 2px 1px 2px 2px;padding: 1px 5px 1px 1px;text-align: left;}
+.content_renovacion_confirmarpedido_totales{float: left;width: 94%;height: 90%;margin: 3px;color: #207B74;padding:5px;background-color:rgb(241, 241, 241);border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;border:1px solid #d9e8f0;}
+.content_renovacion_confirmarpedido_totales_labeldivision{float: left;width: 100%;height: 2px;border-top: 1px solid white;border-color: #207B74;padding-bottom: 3px;}
+.content_renovacion_confirmarpedido_totales_grupo{float: left;width: 100%;height: 30px;}
+.content_renovacion_confirmarpedido_totales_icono{float: left;width: 30px;height: 30px;padding-right: 10px;background-image: url('../images/background/CarroAmarillo.png');background-repeat: no-repeat;background-position: left top;}
+.content_renovacion_confirmarpedido_totales_icono_label{float: left;width: 80%;padding: 5px 0px 0px 0px;padding-bottom: 3px;text-align:center;}
+.content_renovacion_confirmarpedido_totales_labelcantidad{float: left;width: 50%;height: 15px;padding-bottom: 3px; margin-left:50px;}
+.content_renovacion_confirmarpedido_totales_textboxcantidad{float: left;width: 55px;height: 15px;padding: 0px 0px 3px 0px;text-align: right;}
+.content_renovacion_confirmarpedido_totales_label{float: left;width: 50%;height: 12px;padding-bottom: 3px;margin-left:50px;}
+.content_renovacion_confirmarpedido_totales_textbox{float: left;width: 55px;height: 15px;text-align: right;padding-bottom: 3px;}
+.content_renovacion_confirmarpedido_bloque_irapagar_col2{float:left; margin-left:5px;}
+.content_renovacion_confirmarpedido_totales_boton{float: left;width: 175px;height: 35px;margin: 40px 0px 0px 75px;font-size: 15px;padding-bottom: 3px;}
+.seccionplacetopay{width:205px; height:40px; background: url('../Images/background/placetopay.png');float:right;background-repeat:no-repeat;margin-top:5px;visibility:visible;cursor: pointer;}
+.seccionimgtarjetas{width:475px;height:40px; float:left;margin:5px 0px 0px 0px;background: url('../Images/background/imgtarjetas.png');background-repeat:no-repeat;visibility:visible;}
+.RadWindow_MyCustomSkin table .rwTopLeft, .RadWindow_MyCustomSkin table .rwTopRight, .RadWindow_MyCustomSkin table .rwFooterLeft, .RadWindow_MyCustomSkin table .rwFooterRight, .RadWindow_MyCustomSkin table .rwFooterCenter, .RadWindow_MyCustomSkin table .rwBodyLeft, .RadWindow_MyCustomSkin table .rwBodyRight,.RadWindow_MyCustomSkin table .rwTopResize,.RadWindow_MyCustomSkin table .rwStatusbar,.RadWindow_MyCustomSkin table .rwStatusbar .rwLoading{  display: none !important;  } 
+.TelerikModalOverlay { filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75) !important; background-color: black !important;opacity:0.75 !important; -moz-opacity: 0.75 !important; } 
+.RadWindow_MyCustomSkin a.rwCloseButton{background: url("../Images/icons/16x16/IconoCerrar.png") no-repeat !important;}
+.RadWindow_MyCustomSkin a.rwCloseButton:hover{background: url("../Images/icons/16x16/IconoCerrar.png") no-repeat !important;}
+.demo-container {width: 220px;}
+html.RadForm_Black, html.RadForm_BlackMetroTouch {background-color: #fff;}
+
+@media /**/(min-width:100px) and (max-width:500px) {
+    .cabecera{width:300px; height:190px;}
+    .logo_image{width: 200px;height: 90px;}
+    .content_user{width: 270px; margin-right: 10px; height: 75px;}
+    .content_user_info{font-size:0.9em;width:225px;height:18px;}
+    .divproducto{width:300px; height:350px;}
+    .divextras{width:300px; height:700px;}
+    .divtarjetas{height:85px;font-size:0.6em; }
+    .divfacturacion{width:100%; height:300px;font-size:0.6em; }
+    .divresumen{width:100%; height:200px;font-size:0.6em; }
+    .divbaners{height:60px;}
+    .divtarjetasemisores{width:65%; margin-left:0px;}
+    .divtarjetasbancos{width:54%; height:41px; margin-left:0px;float:right; position:relative;}
+    .divtarjetastipos{width:35%; height:41px; margin-left:0px;float:right; position:relative; margin-top:2px}
+    .seccion_forma_pago_titulo001{width:100%; height:10px;}
+    .content_renovacion_formapago_control{width:195px;height:70px;}
+    .content_renovacion_formapago_controlBoton{margin:5px 0px 0px 15px;}
+    .seccion_forma_pago_titulo002{margin:0px 0px 5px 10px;}
+    .content_renovacion_formapago_informacion_textbox{width: 230px;margin: -3px 1px 2px 10px;}
+    .content_renovacion_confirmarpedido_totales{width: 94%;height: 85%;margin-top:10px;}
+    .content_renovacion_confirmarpedido_totales_labelcantidad{height: 15px;padding-bottom: 3px;}
+    .content_renovacion_confirmarpedido_totales_labelcantidad{margin-left:0px;}
+    .content_renovacion_confirmarpedido_totales_label{margin-left:0px;}
+    .divpagar{font-size:0.6em;}
+    .content_renovacion_confirmarpedido_totales_boton{margin: 35px 0px 0px 85px;}
+    .seccionplacetopay{width:90px; height:25px;background-size: 90px;margin:5px 0px 0px 0px;}
+    .seccionimgtarjetas{width:260px;height:40px;background-size: 260px; float:right;margin:5px 0px 0px 0px;}
+}
+
+@media /**/(min-width:501px) and (max-width:800px) {
+    .cabecera{width:500px;height:90px;}
+    .logo_image{width: 200px;height: 90px;}
+    .content_user{width: 270px;margin-right: 10px;height: 75px;}
+    .content_user_info{font-size:0.9em;width:230px;height:18px;}
+    .divproducto{width:500px; height:400px;}
+    .divextras{width:500px; height:495px;}
+    .divfacturacion{height:310px;font-size:0.7em;}
+    .divresumen{height:310px;font-size:0.7em;}
+    .divtarjetas{height:90px;font-size:0.7em;}
+    .seccion_forma_pago_titulo001{width:100%; height:15px;}
+    .divtarjetasemisores{width:66%; margin-left:1px;}
+    .divtarjetasbancos{width:66%; height:43px; margin-left:0px;float:right; position:relative;}
+    .divtarjetastipos{width:33%; height:43px; margin-left:0px;float:right; position:relative; margin-top:2px}
+    .content_renovacion_formapago_control{width:260px;height:75px}
+    .content_renovacion_formapago_controlBoton{margin:2px 0px 0px 30px;}
+    .seccion_forma_pago_titulo002{margin:0px 0px 5px 10px;}
+    .content_renovacion_formapago_informacion_textbox{width: 200px;margin: 0px 1px 2px 10px;}
+    .content_renovacion_confirmarpedido_totales{width: 88%;height: 75%;margin:25px 0px 0px 10px;}
+    .content_renovacion_confirmarpedido_totales_labelcantidad{height: 15px;padding-bottom: 3px;}
+    .content_renovacion_confirmarpedido_totales_labelcantidad{margin-left:0px;}
+    .content_renovacion_confirmarpedido_totales_label{margin-left:0px;}
+    .divpagar{font-size:0.7em;}
+    .content_renovacion_confirmarpedido_totales_boton{margin: 30px 0px 0px 185px;}
+    .seccionplacetopay{width:110px; height:40px;background-size: 110px;margin:5px 0px 0px 0px;}
+    .seccionimgtarjetas{width:300px;height:40px;background-size: 300px;margin:5px 0px 0px 0px; float:left;}
+}
+
+@media /**/(min-width:801px) and (max-width:1000px) {
+    .cabecera{width:800px;height:100px;}
+    .divproducto{width:800px; height:400px;}
+    .divextras{width:800px; height:360px;}
+    .content_renovacion_formapago_controlBoton{margin:0px 0px 0px 20px;}
+    .content_renovacion_formapago_informacion_label{float: left;width: 110px;height: 12px;margin: 2px 1px 2px 10px;padding: 3px 1px 0 1px;text-align: left;}
+    .content_renovacion_confirmarpedido_totales{width: 92%;height: 90%;}
+    .content_renovacion_confirmarpedido_totales_labelcantidad{height: 15px;padding-bottom: 3px;}
+    .content_renovacion_confirmarpedido_totales_boton{margin: 40px 0px 0px -15px;}
+}

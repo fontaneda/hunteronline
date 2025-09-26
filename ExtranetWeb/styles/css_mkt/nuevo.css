@@ -1,0 +1,46 @@
+
+.nav-responsive li.pago-option {
+  background-color: #0ACBBA;
+}
+.nav-responsive li.documento-option {
+  background-color: #557C0E;
+}
+.nav-responsive li.turno-option {
+  background-color: #0066FF;
+}
+
+
+
+.left-menu .main-menu li.pago-option {
+  background-color: #0ACBBA;
+}
+.left-menu .main-menu li.documento-option {
+  background-color: #557C0E;
+}
+.left-menu .main-menu li.turno-option {
+  background-color: #0066FF;
+}
+
+
+
+.title-content.cyan-border {
+  border-color: #0ACBBA;
+}
+.title-content.blue-border {
+  border-color: #0066FF;
+}
+.title-content.darkgreen-border {
+  border-color: #557C0E;
+}
+
+
+.title-content h1.pagos {
+  background-image: url("../../images/img_mkt/pagos-title-dot.png");
+}
+.title-content h1.documentos {
+  background-image: url("../../images/img_mkt/documentos-title-dot.png");
+}
+.title-content h1.turnos {
+  background-image: url("../../images/img_mkt/documentos-title-dot.png");
+}
+

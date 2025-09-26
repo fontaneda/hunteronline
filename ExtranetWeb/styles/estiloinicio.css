@@ -1,0 +1,321 @@
+﻿/*inicio page*/
+.content_inicio
+{
+    float:              left;
+    height:             520px;
+    width:              100%;
+    margin-left:        auto;
+    margin-right:       auto;
+    margin-top:         10px;
+    text-align:         center;
+}
+
+/*.vehiculoradwindowstitulo
+{
+    float: left;
+    height: 50px;
+    width: 340px;
+    margin: 2px 0 0 2px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0 0 2px;
+    color: White;
+    text-align: center;
+    background-color: #532323;
+}*/
+
+.vehiculoradwindowsdetalle
+{
+    float:              left;
+    /*height:             98%;*/
+    /*width:              98%;*/
+    /*margin:             5px 0 0 5px;
+    padding:            5px 0 0 5px;*/
+    text-align:         left;
+    font-family:        Verdana;
+    font-size:          12px;
+    background-color:   #FFFFFF;
+    padding-left: 30px;
+    padding-top: 30px;
+    color:              #666666;
+}
+
+.vehiculoradwindowsdetalleseccion
+{
+    float:              left;
+    /*height:             31%;
+    width:              97%;
+    margin:             5px 0 0 5px;
+    padding:            5px 0 0 5px;*/
+    background-color:   #FFFFFF;
+}
+
+.element
+{
+    /*-webkit-backface-visibility: visible;
+    -webkit-transform: none;*/
+    height: 220px;
+    width: 450px; 
+    /*left: 231px;
+    position: absolute;
+    top: 97px;
+    visibility: visible;*/
+    z-index:9999999999 !important;
+    /*background: url('../images/background/BackgroudTitulo.png') !important;*/
+    /*background: url('../images/background/rojo.png') !important;*/
+    font-family: Verdana ;
+    font-size: 16px ;
+    color: #333333;
+    /*background-color :Gray ;*/
+    overflow:hidden;
+    background: #f7f7f7; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fefefe',GradientType=0 ); /* IE6-8 */
+}
+
+.elementsoporte
+{
+    z-index: 9999995 !important;
+}
+
+.element1
+{
+    /*-webkit-backface-visibility: visible;
+    -webkit-transform: none;*/
+    height: 220px;
+    width: 450px; 
+    /*left: 231px;
+    position: absolute;
+    top: 97px;
+    visibility: visible;*/
+    z-index:9999999999 !important;
+    background: url('../images/background/BackgroudTitulo.png') !important;
+    /*background: url('../images/background/rojo.png') !important;*/
+    font-family: Verdana ;
+    font-size: 16px ;
+    color: #333333;
+    overflow:hidden;
+}
+
+.elementpromocion
+{
+    /*-webkit-backface-visibility: visible;
+    -webkit-transform: none;*/
+    height: 560px;
+    width: 772px; 
+    /*left: 231px;
+    position: absolute;
+    top: 97px;
+    visibility: visible;*/
+    z-index:9999999999 !important;
+    background: url('../images/background/BackgroudTitulo.png') !important;
+    /*background: url('../images/background/rojo.png') !important;*/
+    font-family: Verdana ;
+    font-size: 16px ;
+    color: #333333;
+    overflow:hidden;
+}
+
+.masterradwindowspromocion
+{
+    float: left; /*margin: 0px 5px 0 5px;
+    padding: 5px 0 0 5px;
+  */
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: #666666;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+
+.masterradwindowspromocionimagen
+{
+    float: left;
+     /*width: 100% !important;
+    height: 100% !important;*/
+     height: 560px;
+    width: 772px; 
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    /*background: url('../images/background_nuevo/Promo_rumbo_rusia_sorteo.png') !important;
+    background: url('../images/background_nuevo/Promo_blackweek_sorteo.png') !important;*/
+    background: url('../images/background_nuevo/Promo_Latam_sorteo.png') !important;
+    background-repeat: no-repeat;
+    color: #666666;
+}
+
+.masterradwindowspromocionimagen_renovacion
+{
+    float: left;
+     width: 100% !important;
+    height: 100% !important;
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    /*background: url('../images/background_nuevo/Promo_rumbo_rusia_sorteo_reno.png') !important;*/
+     background: url('../images/background_nuevo/Promo_rumbo_latam_sorteo_reno.png') !important;
+    color: #666666;
+}
+
+.masterradwindowspromocionimagen_renovacion_act
+{
+    float: left;
+     width: 100% !important;
+    height: 100% !important;
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    background: url('../images/background_nuevo/Promo_rumbo_rusia_sorteo_reno_act.png') !important;
+    color: #666666;
+}
+
+
+.letra_promocion_titulo
+{
+    /*padding: 2px 0px 0px 20px !important;*/
+    padding: 2px 0px 0px 2px !important;
+    float: left;
+    font-family: Arial;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /*margin-left: 120px !important;*/
+    margin-left: 510px !important;
+    
+}
+
+.letra_promocion_titulo_renovacion
+{
+    float: left;
+    padding: 6px 0px 0px 20px !important;
+    font-family: Arial;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 120px !important;
+}
+
+.numero
+{
+    float: none;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+.letra
+{
+    float: none;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+}
+ 
+.letra_login
+{
+    float: none;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.letra_subrayado
+{
+    float: none;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #0000FF;
+    font-weight: normal;
+    /*text-decoration: underline;*/
+}
+/*
+.RadWindow_MyCustomSkin  .rwTitlebar,
+.RadWindow_MyCustomSkin table .rwTitlebar,
+.RadWindow_MyCustomSkin .rwCorner .rwTopLeft, 
+.RadWindow_MyCustomSkin .rwCorner .rwTopRight, 
+.RadWindow_MyCustomSkin .rwIcon,
+.RadWindow_MyCustomSkin table .rwTopLeft, 
+.RadWindow_MyCustomSkin table .rwTopRight, 
+.RadWindow_MyCustomSkin table .rwFooterLeft, 
+.RadWindow_MyCustomSkin table .rwFooterRight, 
+.RadWindow_MyCustomSkin table .rwFooterCenter, 
+.RadWindow_MyCustomSkin table .rwBodyLeft, 
+.RadWindow_MyCustomSkin table .rwBodyRight, 
+.RadWindow_MyCustomSkin table .rwTopResize,
+.RadWindow_MyCustomSkin table .rwStatusbar,
+.RadWindow_MyCustomSkin table .rwStatusbar .rwLoading
+ {   
+      display: none !important;   
+ }*/
+    
+    
+/*.rwWindowContent
+    {
+        background-color: antiquewhite !important;
+    }
+
+.RadWindow_MyCustomSkin .rwWindowContent
+  {
+    background-color: AntiqueWhite !important;
+  }
+    
+.RadWindow_MyCustomSkin .rwWindow
+{  
+  background-color: yellow !important; 
+     
+} */
+    
+.RadWindow_MyCustomSkin table .rwTopLeft, 
+.RadWindow_MyCustomSkin table .rwTopRight, 
+.RadWindow_MyCustomSkin table .rwFooterLeft, 
+.RadWindow_MyCustomSkin table .rwFooterRight, 
+.RadWindow_MyCustomSkin table .rwFooterCenter, 
+.RadWindow_MyCustomSkin table .rwBodyLeft, 
+.RadWindow_MyCustomSkin table .rwBodyRight, 
+.RadWindow_MyCustomSkin table .rwTopResize,
+.RadWindow_MyCustomSkin table .rwStatusbar,
+.RadWindow_MyCustomSkin table .rwStatusbar .rwLoading
+{  
+    display: none !important;  
+} 
+
+.TelerikModalOverlay 
+{ 
+    filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75) !important; 
+    background-color: black !important;
+    /*background-color: gray !important; */
+    opacity:0.75 !important; 
+    -moz-opacity: 0.75 !important; 
+} 
+
+
+.RadWindow_MyCustomSkin a.rwCloseButton
+{
+ 	/*background-position: -90px 0 !important;
+ 	background-color: #EF0707;*/
+ 	background: url("../Images/icons/16x16/IconoCerrar.png") no-repeat !important;
+}
+
+.RadWindow_MyCustomSkin a.rwCloseButton:hover
+{
+ 	/*background-position: -90px 0 !important;
+ 	background-color: #EF0707;*/
+ 	background: url("../Images/icons/16x16/IconoCerrar.png") no-repeat !important;
+}

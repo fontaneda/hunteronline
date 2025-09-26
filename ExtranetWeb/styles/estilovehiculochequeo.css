@@ -1,0 +1,286 @@
+﻿/*vehiculochequeo page*/
+#contenedor_maestro
+{
+    float: left;
+    width: 1020px;
+    height: 600px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chequeo_titulo
+{
+    float: left;
+    height: 30px;
+    width: 1003px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.chequeo_tit1
+{
+    float: left;
+    height: 28px;
+    width: 745px;
+    padding-left: 0px;
+    padding-top: 5px;
+    background-position: left top;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chequeo_botonatras
+{
+    float: left;
+    height: 25px;
+    width: 81px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.chequeo_botonespecifico
+{
+    float: left;
+    height: 25px;
+    width: 81px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.chequeo_titulo_2
+{
+    float: left;
+    height: 40px;
+    width: 340px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.chequeo_titulo_21
+{
+    float: left;
+    color: #333333;
+    font-weight: bold;
+    height: 20px;
+    width: 310px;
+    text-align: justify;
+    margin: 3px 0px;
+    padding-left: 3px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.chequeo_titulo_3
+{
+    /*border-radius: 5px;
+    border: 1px solid #999;*/
+    float: left;
+    height: 35px;
+    width: 1000px;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+}
+
+.chequeo_titulo_4
+{
+    float: left;
+    height: 40px;
+    width: 540px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.chequeo_titulo_41
+{
+    float: left;
+    color: #333333;
+    font-weight: bold;
+    height: 40px;
+    width: 70px;
+    text-align: justify;
+    margin: 3px 0px;
+    padding-left: 3px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.chequeo_titulo_42
+{
+    float: left;
+    height: 40px;
+    width: 440px;
+    text-align: justify;
+    margin: 3px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.chequeo_titulo_5
+{
+    float: left;
+     color: #333333;
+    height: 20px;
+    width: 1003px;
+    /*text-align: center;*/
+    font-size: 12px;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+}
+
+.grid_datos
+{
+    float: left;
+    height: 140px;
+    width: 900px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.chequeo_titulo_6
+{
+    float: left;
+    height: 20px;
+    width: 1004px;
+    /*text-align: center;*/
+    font-size: 12px;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.grid_chequeos
+{
+    float: left;
+    height: 191px;
+    width: 900px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+/*colores del grid por estilos*/
+
+.RadGrid_MyCustomSkin
+{
+     /*border: 1px solid #fff;*/
+     color: #333;
+     background-color: transparent;
+}
+
+.RadGrid_MyCustomSkin .rgHeader a
+{
+     color: White;
+}
+ 
+.RadGrid_MyCustomSkin .rgHeader,
+.RadGrid_MyCustomSkin th.rgResizeCol
+{
+     /*background-color: #878787;*/
+     background:url(../images/background/naranja.png) repeat-x 0 0;
+     color: White;
+     border-bottom: 1px solid white;
+     border-right: 1px solid white;
+}
+
+.RadGrid_MyCustomSkin .rgMultiHeaderRow th.rgHeader,
+.RadGrid_MyCustomSkin .rgMultiHeaderRow th.rgResizeCol
+{
+     border: 0 solid white;
+     border-width: 0 1px 1px 0;
+}
+
+.RadGrid_MyCustomSkin .rgAltRow
+{
+    background: #e9e9e9;
+}
+
+.RadGrid_MyCustomSkin .rgRow
+{
+     background: #f5f5f5;
+}
+
+.RadGrid_MyCustomSkin .rgHoveredRow
+{
+     background: #f5f0d2;
+}
+
+.RadGrid_MyCustomSkin .rgNumPart a:hover,
+.RadGrid_MyCustomSkin .rgNumPart a.rgCurrentPage:hover
+{
+     background-color: #878787;
+     border-color: white;
+     color: white;
+}
+ 
+.RadGrid_MyCustomSkin .rgNumPart a.rgCurrentPage
+{
+     border: 1px solid #e9e9e9;
+     color: #878787;
+     /*color:White;*/
+}
+ 
+.RadGrid_MyCustomSkin .rgFooter td,
+.RadGrid_MyCustomSkin .rgFooterWrapper
+{
+     border-top: 1px solid;
+     border-color: White;
+}
+ 
+.RadGrid_MyCustomSkin .rgPager
+{
+    background-color: #e9e9e9;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+}
+ 
+.RadGrid_MyCustomSkin .rgPager .rgStatus
+{
+     border: solid;
+     border-color: White;
+     border-width: 1px 0 0 0;
+}
+
+.RadGrid_MyCustomSkin .rgSelectedRow 
+{
+    background: #d7e8fe;
+}

@@ -1,0 +1,391 @@
+﻿/* File Created: diciembre 3, 2020 */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: Black;
+    padding: 10px;
+    margin: 0px;
+    background-color: #C8C8C8;
+    
+}
+
+
+
+/*@media (max-width: 420px) {
+  
+  body {
+    background-color: yellow;
+  }
+}*/
+
+/*@media (min-width: 420px) {
+  
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 560px) {
+  
+  body {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (max-width: 844px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 1175px) {
+  body {
+    background-color: red;
+  }
+}*/
+
+
+h4                                                                   /*fontaneda*/
+{       
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 7px;
+    font-size: 11px;
+    width:auto;
+    float:left;
+}
+
+h5                                                                  /*fontaneda*/
+{
+    /*color: white;*/
+    color: #C99714;
+    margin: 0;
+    font-weight: normal;
+    font-size: 11px;
+    width:220px;
+    float:right;
+}
+
+#container_contrato
+{
+    width: 1024px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  #container_contrato {
+    width: 860px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  #container_contrato {
+    width: 640px;
+   
+  }
+}
+
+#banner5
+{
+    padding: 0px;
+    height: 100px;
+    margin-bottom: 0px;
+    background: url('../Images/background/Rojo_Superior.png'); 
+    
+}
+
+#content
+{
+    height: auto;
+}
+
+#toppanel
+{
+    position:               absolute;
+    top:                    0;
+    width:                  255px;
+    z-index:                9999990 !important;
+    text-align:             left;
+    margin-left:            685px;
+    margin-top:             60px;
+    color:                  black !important;
+    height:                 32px;
+}
+
+#panel
+{
+    margin-left:            0px;                
+    margin-top:             0px;                
+    width:                  92%;                
+    height:                 295px;              
+    overflow:               hidden;             
+    position:               static;             
+    z-index:                9999991 !important; 
+    display:                none;               
+    background-image:       url('../Images/background/BackgroundCarroCompra.png');
+}
+
+#panel .content
+{
+    margin:                 0 auto;
+    padding-top:            15px;
+    padding-left:           10px;
+    padding-right:          10px;
+    text-align:             left;
+    background-color:       transparent;    
+}
+.clearfix:after
+{
+    content:                ".";
+    display:                block;
+    height:                 0;
+    clear:                  both;
+    visibility:             hidden;
+}
+.clearfix
+{
+    display:                inline-block;
+}
+
+.clearfix
+{
+    display:                block;
+}
+.clearfix
+{
+    height:                 1%;
+}
+.clearfix
+{
+    display:                block;
+}
+
+
+.logo_image
+{
+    float: left;
+    width: 280px;
+    text-align: left;
+    background-image: url('../images/background/logo_hunter_online_header1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+ .logo_image {
+    width: 240px;
+  }
+}
+.content_user
+{
+    float: right;
+    width: 310px;
+    margin-right: 25px;
+    height: 85px;
+    padding: 5px 5px;
+    margin-left: 10px;
+  
+}
+
+@media (max-width: 768px) {
+  .content_user {
+    width: 280px;
+     margin-left: 5px;
+     margin-right: 20px;
+  }
+}
+.content_user_info                                                                  /*fontaneda*/
+{
+    float: left;
+    width: 260px;
+    height: 20px;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.content_user_label
+{
+    float: left;
+    width: 240px;
+    maximunsize: 240px;
+    autosize: "true";
+    word-wrap: normal; 
+    word-break: break-all;
+}
+
+.content_user_contrato {
+	font-size: 12px;
+
+}
+
+.content_principal_bloque_contrato
+{
+    float: left;
+    height: 490px;
+    width: 1002px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .content_principal_bloque_contrato {
+   width: 850px;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .content_principal_bloque_contrato {
+    width: 600px;
+  }
+}
+
+
+.content_principal_contrato
+{
+    float: left;
+    height: 600px;
+    width: 1024px;
+}
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .content_principal_contrato {
+   width: 850px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content_principal_contrato {
+    width: 600px;
+  }
+}
+
+.regusu_bloque_col8_parrafo
+{
+    float: left;
+    width: 480px;
+    height: auto;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .regusu_bloque_col8_parrafo {
+   width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .regusu_bloque_col8_parrafo {
+   width: 600px;
+  }
+}
+
+.regusu_bloque_col9_parrafo
+{
+    float: left;
+    width: 660px;
+    height: auto;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .regusu_bloque_col9_parrafo {
+   font-size: 12px;
+   width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .regusu_bloque_col9_parrafo {
+    font-size: 12px;
+    width: 450px;
+    margin-top: 0px;
+  }
+}
+
+.column01_cell_boton01
+{
+    float: left;
+    height: 25px;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    text-align: right;
+}
+
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .column01_cell_boton01 {
+   width: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .column01_cell_boton01 {
+    width: 2px;
+  }
+}
+
+.column01_cell_boton02
+{
+    float: left;
+    height: 25px;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+  .column01_cell_boton02 {
+    padding: 0px;
+  }
+}
+
+.content_detalle_2
+{
+    float: left;
+    height: 420px;
+    width: 1001px;
+}
+
+
+@media (max-width: 992px) {
+  /* line 212, ../sass/_media-querys.scss */
+  .content_detalle_2 {
+   width: 840px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content_detalle_2 {
+    width: 600px;
+  }
+}

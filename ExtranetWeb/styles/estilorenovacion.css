@@ -1,0 +1,908 @@
+﻿/*renovacion page*/
+.content_renovacion_titulo
+{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content_renovacion_parrafo
+{
+    float: left;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.content_renovacion_titulopage
+{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.content_renovacion_confirmardato_bloque
+{
+    float: left;
+    width: 980px;
+    height: 450px;
+    border-width: 0;
+    clear: both;
+    padding: 15px 10px 10px 10px;
+}
+
+.content_renovacion_formapago_bloque
+{
+    float: left;
+    width: 980px;
+    height: 450px;
+    border-width: 0;
+    clear: both;
+    padding: 15px 10px 10px 10px;
+}
+
+.content_renovacion_confirmarpedido_bloque
+{
+    float: left;
+    width: 980px;
+    height: 450px;
+    border-width: 0;
+    clear: both;
+    padding: 0px 10px 10px 10px;
+}
+
+.content_renovacion_confirmarpedido_bloque_columna1
+{
+    float: left;
+    width: 730px;
+    height: 450px;
+    border-width: 0;
+    clear: both;
+    padding-right: 40px;
+}
+
+.content_renovacion_confirmarpedido_bloque_columna2
+{
+    float: left;
+    width: 206px;
+    height: 327px;
+    border-width: 0;
+    /*padding: 0px 0px 0px 10px;*/
+    /*border: solid 1px #cccccc;*/
+    /*border: solid 1px #CCDCDA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;*/
+    /*background-color: #CCDCDA;*/
+    /*background: linear-gradient(0, white, #CCDCDA);*/
+    background-image: url('../images/background/Fondo_Carro2.png');
+}
+
+.content_renovacion_uppercase
+{
+    text-transform: uppercase;
+}
+
+.content_renovacion_vehiculofiltrar
+{
+    float: left;
+    width: 100%;
+    height: 35px;
+}
+
+.content_renovacion_vehiculotitulo
+{
+    float: left;
+    height: 17px;
+    width: 90px;
+}
+
+.content_renovacion_texto_filtro
+{
+    float: left;
+    height: 17px;
+    width: 300px;
+    text-transform: uppercase;
+}
+.content_renovacion_button_filtro
+{
+    float: left;
+    height: 17px;
+    width: 85px;
+}
+
+.content_renovacion_button_chequear
+{
+    float: left;
+    height: 17px;
+    width: 160px;
+    margin: 0px 0px 0px 25px;
+}
+
+.content_renovacion_confirmardato_gridcontrol
+{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.content_renovacion_confirmardato_bloque_col1
+{
+    float: left;
+    width: 585px;
+    height: 500px;
+}
+
+.content_renovacion_confirmardato_bloque_col1_parrafo
+{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.content_renovacion_confirmardato_bloque_col2_parrafo
+{
+    float: right;
+    width: 260px;
+    height: auto;
+    margin-bottom: 5px;
+}
+.content_renovacion_confirmardato_bloque_col1_botom
+{
+    float: right;
+    width: 80px;
+    height: auto;
+}
+
+.content_renovacion_confirmardato_totales
+{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    padding: 3px 0 3px 5px;
+}
+
+.content_renovacion_confirmardato_totales_grupo
+{
+    float: left;
+    width: 240px;
+    height: 30px;
+    font-size: large;
+}
+
+.content_renovacion_confirmardato_totales_icono
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/background/Shopping_Cart_30.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    font-size: large;
+}
+
+.content_renovacion_confirmardato_totales_icono_label
+{
+    float: left;
+    width: 160px;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.content_renovacion_confirmardato_totales_labelcantidad
+{
+    float: left;
+    width: 150px;
+    height: 35px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content_renovacion_confirmardato_totales_textboxcantidad
+{
+    float: left;
+    width: 75px;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    padding: 10px 5px 1px 1px;
+    text-align: right;
+    font-size: x-large;
+}
+
+.content_renovacion_confirmardato_totales_labeldivision
+{
+    float: left;
+    width: 230px;
+    height: 2px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    border-top: 2px solid white;
+}
+
+.content_renovacion_confirmardato_totales_label
+{
+    float: left;
+    width: 120px;
+    height: 12px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content_renovacion_confirmardato_totales_textbox
+{
+    float: left;
+    width: 105px;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+}
+
+.content_renovacion_formapago_informacion_div
+{
+    float: left;
+    width: 10px;
+    height: 270px;
+}
+
+.content_renovacion_formapago_informacion_logodinners
+{
+    float: left;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.content_renovacion_formapago_informacion_label_titulo
+{
+    float: left;
+    width: 350px;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 3px 1px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.content_renovacion_formapago_informacion_label
+{
+    float: left;
+    width: 150px;
+    height: 12px;
+    margin: 2px 1px 2px 10px;
+    padding: 3px 1px 0 1px;
+    text-align: left;
+}
+
+.content_renovacion_formapago_informacion_label002
+{
+    float: left;
+    width: 50px;
+    height: 12px;
+    margin: 10px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    text-align: right;
+    font-size:0.9em;
+    color:Black;
+    font-weight:normal;
+}
+.content_renovacion_formapago_informacion_label001
+{
+    float: left;
+    width: 150px;
+    height: 12px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    text-align: right;
+}
+.content_renovacion_formapago_informacion_textbox
+{
+    float: left;
+    width: 200px;
+    height: 22px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+}
+.content_renovacion_formapago_informacion_textbox001
+{
+    float: left;
+    width: 200px;
+    height: 20px;
+    margin: 8px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+}
+
+.content_renovacion_formapago_informacion_radio
+{
+    float: left;
+    width: 150px;
+    height: 70px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+}
+
+.content_renovacion_formapago_terminocondicion
+{
+    float: left;
+    width: 968px;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    /*border: solid 1px #cccccc;*/
+}
+
+.content_renovacion_formapago_terminocondicion_check
+{
+    float: left;
+    font-size: small;
+    width:96%;
+    /*height:25px;*/
+    margin-top:15px;
+    padding:5px;
+    background-color: #ffffff;
+    border: 1px solid #8b8b8b;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    opacity: 0.7;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
+    filter: alpha(opacity = 70);
+}
+
+.content_renovacion_formapago_terminocondicion_button
+{
+    float: right;
+    width: 400px;
+    font-size: small;
+}
+
+.content_renovacion_formapago_banner
+{
+    float: left;
+    width: 980px;
+    margin: 10px 0px 0px 0px;
+    overflow: auto;
+}
+
+.content_renovacion_formapago_banner_col1
+{
+    float: left;
+    width: 679px;
+}
+
+.content_renovacion_formapago_banner_col2
+{
+    float: left;
+    width: 267px;
+    text-align: center;
+}
+
+.content_renovacion_confirmarpedido_cabecera
+{
+    float: left;
+    height: auto;
+    width: 972px;
+    margin-right: 10px;
+    padding: 3px 0 3px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgba(0, 44, 49, 0.1);
+}
+
+.content_renovacionsubtitulo
+{
+    float: left;
+    width: 978px;
+    line-height: 18px;
+    text-align: justify;
+    margin: 3px 0px;
+    padding-left: 2px;
+    padding-top: 3px;
+    background-position: left top;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+    background: rgba(0, 44, 49, 0.1);
+}
+
+.content_renovacion_confirmarpedido_gridcontrol
+{
+    float: left;
+    width: 100%;
+    height: 175px;
+}
+
+.content_renovacion_confirmarpedido_bloque_irapagar
+{
+    float: left;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-weight: bold;
+    /*font-size: medium;*/
+   /* border: solid 1px #cccccc;*/
+}
+
+.content_renovacion_confirmarpedido_bloque_irapagar_col1
+{
+    float: left;
+    width: 350px;
+    margin: 2px 1px 2px 0px;
+    text-align: left;
+    /*background: rgba(0, 44, 49, 0.1);*/
+    font-size: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.content_renovacion_confirmarpedido_bloque_irapagar_col2
+{
+    float: right;
+}
+
+.content_renovacion_confirmarpedido_subtotal
+{
+    float: left;
+    width: 980px;
+}
+
+.content_renovacion_confirmarpedido_subtotal_col1
+{
+    float: left;
+    width: 870px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.content_renovacion_confirmarpedido_subtotal_col2
+{
+    float: left;
+    width: 90px;
+    height: 20px;
+    text-align: right;
+    font-weight: bold;
+    color: #95122C;
+}
+
+.content_renovacion_confirmarpedido_total
+{
+    float: left;
+    width: 980px;
+}
+
+.content_renovacion_confirmarpedido_total_col1
+{
+    float: left;
+    width: 695px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content_renovacion_confirmarpedido_total_col2
+{
+    float: left;
+    width: 176px;
+    text-align: right;
+    font-weight: bold;
+    color: #95122C;
+}
+
+.column04_cell_button
+{
+    float: left;
+    height: 20px;
+    width: 60px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+}
+
+.tab_general
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center;
+    background-color: #007067;
+    background: url('../Images/background/turquesa.png') !important;
+}
+
+.tab_individual
+{
+    float: left;
+    width: auto;
+    height: auto;
+    Color:White ;
+    font-size: small;
+    text-align: center;
+}
+
+.tab_individual:selected 
+{
+    float: left;
+    width: auto;
+    height: auto;
+    Color:White;
+    font-size: small;
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+} 
+
+html .RadTabStrip .rtsLevel1 .rtsSelected,
+html .RadTabStrip .rtsLevel1 .rtsSelected:hover
+{     
+   float: left;
+   width: auto;
+   height: auto;
+   Color:White;
+   font-size: small;
+   background-color: #007067;
+}
+
+.content_datosrenovacionsubtitulo_bloque
+{
+    float: left;
+    width: 980px;
+    border-width: 0;
+    clear: both;
+    padding: 0 10px 10px 10px;
+     
+}
+
+.content_tab_datosrenovacion_master
+{
+    float: left;
+    height: 420px;
+    width: 1000px;
+    padding: 0px 5px 5px 5px;
+}
+
+.content_renovacion_confirmarpedido_totales
+{
+    float: left;
+    width: 185px;
+    height: auto;
+    margin-right: 10px;
+    padding: 15px 0 3px 20px;
+    color: #207B74;
+}
+
+.content_renovacion_confirmarpedido_totales_grupo
+{
+    float: left;
+    width: 165px;
+    height: 30px;
+    font-size: large;
+}
+
+.content_renovacion_confirmarpedido_totales_icono
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    /*background-image: url('../images/background/Shopping_Cart_30.png');*/
+    background-image: url('../images/background/CarroAmarillo.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    font-size: large;
+}
+
+.content_renovacion_confirmarpedido_totales_icono_label
+{
+    float: left;
+    width: 120px;
+    padding: 5px 0px 0px 0px;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.content_renovacion_confirmarpedido_totales_labelcantidad
+{
+    float: left;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.content_renovacion_confirmarpedido_totales_textboxcantidad
+{
+    float: left;
+    width: 55px;
+    height: 20px;
+    padding: 10px 0px 3px 0px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.content_renovacion_confirmarpedido_totales_labeldivision
+{
+    float: left;
+    width: 160px;
+    height: 2px;
+    border-top: 1px solid white;
+    border-color: #207B74;
+    padding-bottom: 3px;
+}
+
+.content_renovacion_confirmarpedido_totales_label
+{
+    float: left;
+    width: 100px;
+    height: 12px;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.content_renovacion_confirmarpedido_totales_textbox
+{
+    float: left;
+    width: 55px;
+    height: 20px;
+    text-align: right;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.content_renovacion_confirmarpedido_totales_boton
+{
+    float: left;
+    width: 150px;
+    height: 28px;
+    margin: 40px 1px 2px 20px;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.boton_color_pagar
+{
+    font-size: 11px;
+    text-align: center;
+    color: White;
+    /*background-color: #3E9295;
+    opacity: 1;*/
+}
+
+.renovacionradwindowsdetalle 
+{
+    float: left;
+    margin: 5px 0 0 5px;
+    padding: 5px 0 0 5px;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: #666666;
+}
+
+.element_radwindows
+{
+    z-index:9999999999 !important;
+}
+
+.content_renovacion_formapago_informacion
+{
+    float:              left;
+    width:              980px;
+    height:             267px;
+    margin-right:       10px;
+}
+
+.content_renovacion_formapago_informacion_colA
+{
+    float:              left;
+    width:              463px;
+    height:             235px;
+    margin:             10px 0px 0px 0px;
+    padding:            10px;
+    background-color:   #FAFCFE;
+    /*opacity:            0.7;*/
+}
+
+.content_renovacion_formapago_informacion_colB
+{
+    float:              left;
+    width:              463px;
+    height:             235px;
+    margin:             10px 0px 0px 0px;
+    padding:            10px;
+    background-color:   #FAFCFE;
+    /*background-color:   #DBDBDB;
+    opacity:            0.7;*/
+}
+
+.seccion_forma_pago_titulo001
+{
+    float:              left;
+    font-size:          14px;
+    font-weight:        bold;
+    width:              360px;
+    height:             30px;
+    margin:             10px 0px 5px 0px;
+    color:              #646565;
+    font-family:        Calibri;
+}
+
+.seccion_forma_pago_titulo002
+{
+    float:              left;
+    font-size:          14px;
+    font-weight:        bold;
+    width:              835px;
+    height:             60px;
+    margin:             -20px 0px 5px 10px;
+    color:              #646565;
+    font-family:        Calibri;
+    padding:            5px;
+    border-radius:      7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border:             1px solid #d4ccd4;
+    background:         rgb(226,226,226);
+    background:         -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background:         -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+    background:         linear-gradient(135deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+    filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 );
+}
+
+.content_renovacion_formapago_control
+{
+    width:              450px;
+    height:             28px;
+    float:              left;
+    position:           relative;
+    margin:             -15px 0px 0px 0px;
+    background:         rgb(223,223,223); 
+    background:         -moz-linear-gradient(top,  rgba(223,223,223,1) 0%, rgba(244,247,249,1) 100%);
+    background:         -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,223,223,1)), color-stop(100%,rgba(244,247,249,1)));
+    background:         -webkit-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%); 
+    background:         -o-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%); 
+    background:         -ms-linear-gradient(top,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%);
+    background:         linear-gradient(to bottom,  rgba(223,223,223,1) 0%,rgba(244,247,249,1) 100%);
+    filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#f4f7f9',GradientType=0 );
+}
+
+.content_renovacion_formapago_control2
+{
+    width:              480px;
+    height:             25px;
+    float:              left;
+    position:           relative;
+    margin:             2px 3px 0px 0px;
+    background-color:   #878787;
+    color:              White;
+    font-size:          1em;
+}
+
+.content_renovacion_formapago_controlBoton
+{
+    width:              auto;
+    height:             auto;
+    float:              left;
+    position:           relative;
+    margin:             0px 0px 0px 0px;
+    text-align:         left;
+}
+
+.content_renovacion_formapago_informacion_control
+{
+    width:              463px;
+    height:             auto;
+    float:              left;
+    position:           relative;
+    margin:             15px 0px 0px 0px;
+    text-align:         center;
+    color:              #444444;
+}
+
+.content_renovacion_formapago_informacion_controlDA
+{
+    width:              450px;
+    height:             100px;
+    margin:             115px 0px 0px 0px;
+    text-align:         left;
+    font-weight:        bold;
+    color:              #444444;
+    background-color:   #ededed;
+    -moz-border-radius: 0px 0px 6px 6px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    border-radius:      0px 0px 6px 6px;
+    filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#e1e1e1');
+    -ms-filter:         "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#e1e1e1')";
+    background-image:   -moz-linear-gradient(top, #ffffff, #e1e1e1);
+    background-image:   -ms-linear-gradient(top, #ffffff, #e1e1e1);
+    background-image:   -o-linear-gradient(top, #ffffff, #e1e1e1);
+    background-image:   -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#e1e1e1));
+    background-image:   -webkit-linear-gradient(top, #ffffff, #e1e1e1);
+    background-image:   linear-gradient(top, #ffffff, #e1e1e1);
+    z-index:99998;
+}
+
+.content_renovacion_formapago_informacion_controlLabel
+{
+    width:              100px;
+    height:             auto;
+    float:              left;
+    position:           relative;
+    margin:             3px 0px 0px 0px;
+    text-align:         left;
+    font-size:          12px;
+    font-weight:        bold;
+    color:              #444444;
+}
+
+.content_renovacion_formapago_informacion_controlCombo
+{
+    width:              360px;
+    height:             auto;
+    float:              left;
+    position:           relative;
+    margin:             0px 0px 0px 0px;
+    text-align:         left;
+    color:              #444444;
+    z-index:            100;
+}
+
+.content_renovacion_formapago_logos
+{
+    width:              200px;
+    height:             30px;
+    float:              right;
+    position:           relative;
+    margin:             100px 0px 0px 0px;
+    text-align:         right;
+}
+
+.seccion_promocion_imagen
+{
+    width:              40px; 
+    height:             20px; 
+    float:              right;
+    position:           relative; 
+    background-image:   url('../images/icons/32x32/icono_promocion.png');
+    background-repeat:  no-repeat;
+    background-size:    cover;
+    background-position:center center;
+}
+
+.seccion_nuevo_imagen
+{
+    width:              40px; 
+    height:             20px; 
+    float:              right;
+    position:           relative; 
+    background-image:   url('../images/icons/32x32/icono_nuevo.png');
+    background-repeat:  no-repeat;
+    background-size:    cover;
+    background-position:center center;
+}

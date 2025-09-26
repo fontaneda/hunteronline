@@ -1,0 +1,1000 @@
+/* line 5, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* common styles */
+/* line 9, ../sass/main.scss */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* line 15, ../sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 21, ../sass/main.scss */
+.red-back {
+  background-color: #db0032;
+}
+
+/* line 25, ../sass/main.scss */
+.grey-back {
+  background-color: #f4f7f9;
+}
+
+/* line 29, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 34, ../sass/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 38, ../sass/main.scss */
+form {
+  max-width: 100% !important;
+}
+
+/* line 42, ../sass/main.scss */
+.wrap {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+/* line 47, ../sass/main.scss */
+.messages {
+  display: flex;
+  margin: 3rem auto 0;
+  min-width: 75%;
+  max-width: 90%;
+  text-align: center;
+  background: #fff;
+  box-shadow: rgba(107, 107, 107, 0.1) 0 0.2rem 1.1rem;
+  padding: 2rem 3rem 2rem 5rem;
+  border-radius: 8rem;
+  font-size: 1.4rem;
+  color: #717780;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s linear;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 64, ../sass/main.scss */
+.messages b {
+  font-weight: 700;
+}
+/* line 67, ../sass/main.scss */
+.messages.alert {
+  background: #fdf9f5 url("../images/alert-icon.png") no-repeat 1.5rem center;
+}
+/* line 70, ../sass/main.scss */
+.messages.error {
+  background: #fbf9f9 url("../images/error-icon.png") no-repeat 1.5rem center;
+}
+/* line 73, ../sass/main.scss */
+.messages.sucess {
+  background: #f5fcf6 url("../images/sucess-icon.png") no-repeat 1.5rem center;
+}
+/* line 76, ../sass/main.scss */
+.messages .x-btn {
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: black;
+  justify-self: flex-end;
+}
+
+/* line 85, ../sass/main.scss */
+.close-message {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* end of common styles */
+/*header*/
+/* line 96, ../sass/main.scss */
+.socials {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 104, ../sass/main.scss */
+.socials p {
+  writing-mode: vertical-lr;
+  font-size: 1.4rem;
+}
+/* line 108, ../sass/main.scss */
+.socials ul {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 114, ../sass/main.scss */
+.socials ul li {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* line 121, ../sass/main.scss */
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("../images/back-header-red-img.jpg") top no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+/* line 129, ../sass/main.scss */
+header .top-header {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 136, ../sass/main.scss */
+header .btn-create {
+  background: none;
+  color: #ffd12d;
+  border: 2px solid #ffd12d;
+  padding: 1.5rem 2.8rem;
+  border-radius: 20rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s;
+}
+/* line 147, ../sass/main.scss */
+header .btn-create:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 151, ../sass/main.scss */
+header .arrow {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* line 159, ../sass/main.scss */
+.login-section {
+  margin: 20rem auto;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+/* line 166, ../sass/main.scss */
+.login-section .sign-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+  align-items: center;
+}
+/* line 172, ../sass/main.scss */
+.login-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 0.1rem;
+  color: rgba(255, 187, 187, 0.8);
+  line-height: 6.5rem;
+}
+/* line 178, ../sass/main.scss */
+.login-section h1 strong {
+  font-size: 9.4rem;
+  font-weight: 700;
+}
+/* line 182, ../sass/main.scss */
+.login-section h1 b {
+  font-size: 7.2rem;
+  font-weight: 700;
+}
+/* line 188, ../sass/main.scss */
+.login-section p {
+  text-align: center;
+  color: rgba(255, 158, 158, 0.8);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+/* line 195, ../sass/main.scss */
+.login-section a {
+  display: inline-block;
+  margin: 0.5rem 2rem 1rem 0;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  align-self: flex-end;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* line 205, ../sass/main.scss */
+.login-section .btn-create-device {
+  text-decoration: none;
+  color: #ffd12d;
+  align-self: center;
+  width: 35rem;
+  margin: 3rem 0;
+  padding: 2.5rem 0;
+  display: none;
+}
+
+/* line 216, ../sass/main.scss */
+.input-field {
+  background-color: #fefefe;
+  font-family: "Lato", sans-serif;
+  height: 6rem;
+  width: 41rem;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+/* line 230, ../sass/main.scss */
+.form-submit-btn {
+  width: 35rem;
+  padding: 2.5rem 0;
+  background: linear-gradient(to bottom right, #ff9900, #e49f19);
+  border: none;
+  border-radius: 10rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.6rem;
+  color: #fff;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px, rgba(0, 0, 0, 0.2) 3px 10px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px, rgba(0, 0, 0, 0.2) 3px 10px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px, rgba(0, 0, 0, 0.2) 3px 10px 8px;
+}
+
+/* line 248, ../sass/main.scss */
+.error-input {
+  border: 0.2rem solid #ff0000;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 253, ../sass/main.scss */
+.error-login {
+  margin-top: 1.5rem;
+  color: #faff00 !important;
+  font-size: 1.6rem !important;
+  padding: 1rem 2rem;
+  font-weight: 300;
+}
+
+/*end of header*/
+/*features squares*/
+/* line 267, ../sass/main.scss */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 270, ../sass/main.scss */
+.features div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 48rem;
+  padding-bottom: 5rem;
+  color: rgba(244, 247, 249, 0.8);
+  height: 60rem;
+}
+/* line 281, ../sass/main.scss */
+.features h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 6.5rem;
+  margin: 2rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+/* line 288, ../sass/main.scss */
+.features h2 span {
+  font-weight: 300;
+  font-size: 3.6rem;
+  text-align: right;
+}
+/* line 294, ../sass/main.scss */
+.features p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/* line 298, ../sass/main.scss */
+.features .pagos {
+  background: url("../images/pagos.png") no-repeat center;
+  background-size: cover;
+}
+/* line 302, ../sass/main.scss */
+.features .administrar {
+  background: url("../images/adminstrar.png") no-repeat center;
+  background-size: cover;
+}
+/* line 306, ../sass/main.scss */
+.features .turnos {
+  background: url("../images/turnos.png") no-repeat center;
+  background-size: cover;
+}
+/* line 310, ../sass/main.scss */
+.features .facturacion {
+  background: url("../images/facturacion.png") no-repeat center;
+  background-size: cover;
+}
+
+/* end features squares*/
+/*footer*/
+/* line 320, ../sass/main.scss */
+footer {
+  background: #b20020;
+  min-height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+/* line 326, ../sass/main.scss */
+footer .info-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+/* line 332, ../sass/main.scss */
+footer .footer-text {
+  margin-left: 5rem;
+}
+/* line 336, ../sass/main.scss */
+footer .footer-text ul.fonos li {
+  margin: 0.8rem 1rem;
+}
+/* line 338, ../sass/main.scss */
+footer .footer-text ul.fonos li:first-child {
+  margin-left: 0;
+}
+/* line 341, ../sass/main.scss */
+footer .footer-text ul.fonos li a {
+  text-decoration: none;
+}
+/* line 346, ../sass/main.scss */
+footer .footer-text ul li {
+  display: inline-block;
+}
+/* line 348, ../sass/main.scss */
+footer .footer-text ul li p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+/* line 353, ../sass/main.scss */
+footer .footer-text ul li p b {
+  font-weight: 900;
+}
+/* line 357, ../sass/main.scss */
+footer .footer-text ul li a {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+}
+/* line 365, ../sass/main.scss */
+footer .footer-text .copy {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 373, ../sass/main.scss */
+footer .norton {
+  width: 16.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*end footer*/
+/* SignUp form */
+/* line 386, ../sass/main.scss */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* line 393, ../sass/main.scss */
+.singup-header {
+  background: #b20020;
+  height: 12.5rem;
+  padding: 3rem;
+}
+/* line 397, ../sass/main.scss */
+.singup-header .wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* line 406, ../sass/main.scss */
+.btn-back {
+  padding: 0 2.4rem;
+  text-align: center;
+  line-height: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+  border: 0.2rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+/* line 415, ../sass/main.scss */
+.btn-back img {
+  display: inline-block;
+  margin-right: 0.3rem;
+  transform: translateY(35%);
+}
+
+/* line 423, ../sass/main.scss */
+.singup-footer {
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+/* line 428, ../sass/main.scss */
+.singup-form-container {
+  width: 90%;
+  max-width: 111.2rem;
+  margin: 5.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 437, ../sass/main.scss */
+.signup-txt {
+  margin-top: 3rem;
+}
+/* line 439, ../sass/main.scss */
+.signup-txt h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+}
+/* line 442, ../sass/main.scss */
+.signup-txt h1 b {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+/* line 450, ../sass/main.scss */
+.signup-servicios {
+  margin: 1.6rem 0;
+}
+/* line 452, ../sass/main.scss */
+.signup-servicios li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 461, ../sass/main.scss */
+.signup-servicios li img {
+  margin-right: 1.2rem;
+}
+
+/* line 467, ../sass/main.scss */
+.signup-form {
+  width: 90%;
+  max-width: 65.5rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31.2rem, 1fr));
+  grid-gap: 3rem;
+  justify-content: center;
+}
+
+/* line 477, ../sass/main.scss */
+.signup-input {
+  position: relative;
+}
+/* line 479, ../sass/main.scss */
+.signup-input label {
+  background: #f4f7f9;
+  position: absolute;
+  top: -0.8rem;
+  left: 2.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0.3rem;
+  color: #c7c7c7;
+}
+/* line 489, ../sass/main.scss */
+.signup-input input {
+  width: 100%;
+  border: 0.1rem #c7c7c7 solid;
+  border-radius: 0.5rem;
+  line-height: 4.8rem;
+  background: none;
+  padding: 0 0.5rem;
+}
+
+/* line 499, ../sass/main.scss */
+.signup-select {
+  grid-column: span 2;
+  justify-self: center;
+  width: 100%;
+}
+/* line 503, ../sass/main.scss */
+.signup-select p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #c7c7c7;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 512, ../sass/main.scss */
+.selects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 518, ../sass/main.scss */
+.select-item {
+  width: 90%;
+  max-width: 11.1rem;
+  margin: 0 3rem;
+  position: relative;
+}
+/* line 523, ../sass/main.scss */
+.select-item label {
+  background: #f4f7f9;
+  position: absolute;
+  top: -0.8rem;
+  left: 2.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0.3rem;
+  color: #c7c7c7;
+}
+
+/* line 535, ../sass/main.scss */
+.select-css {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0.1rem #c7c7c7 solid;
+  border-radius: 0.5rem;
+  line-height: 4.8rem;
+  background: none;
+  padding: 0 0.5rem;
+  font-size: 1.4rem;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23A9A9A9%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+/* line 551, ../sass/main.scss */
+.item-check {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+/* line 558, ../sass/main.scss */
+.item-check p {
+  color: #7c7c7c;
+  font-size: 1.2rem;
+  letter-spacing: 0.1tem;
+}
+
+/* line 565, ../sass/main.scss */
+.signup-terms {
+  grid-column: span 2;
+  justify-content: start;
+}
+
+/* line 570, ../sass/main.scss */
+.signup-btn {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* line 576, ../sass/main.scss */
+.signup-create-btn {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 5rem;
+  background: #4a65f5;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0.6rem 1.1rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+/* end SingUp */
+/* CLASES CLIENTE*/
+/* line 594, ../sass/main.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 598, ../sass/main.scss */
+.input-cliente {
+  width: 80%;
+  max-width: 54rem;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 605, ../sass/main.scss */
+.input-cliente .signup-input {
+  flex-grow: 1;
+}
+
+/* line 610, ../sass/main.scss */
+.btn {
+  border: none;
+  padding: 1.8rem auto;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: 80%;
+  display: block;
+  outline: none;
+}
+
+/* line 624, ../sass/main.scss */
+.btn-clean {
+  background: #db0032;
+  max-width: 11.5rem;
+}
+
+/* line 629, ../sass/main.scss */
+.btn-search {
+  background: #4a65f5;
+  max-width: 29rem;
+  margin: 2rem auto;
+}
+
+/* line 635, ../sass/main.scss */
+.d-flex {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 643, ../sass/main.scss */
+.table-data {
+  width: 90%;
+  margin-top: 5.5rem;
+  transition: all 1s;
+}
+/* line 647, ../sass/main.scss */
+.table-data h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+/* line 651, ../sass/main.scss */
+.table-data table {
+  width: 100%;
+  margin: 1.2rem;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+/* line 657, ../sass/main.scss */
+.table-data table input[type="checkbox"] {
+  transform: scale(1.8);
+  border: none;
+  border-radius: 0.8rem;
+}
+/* line 662, ../sass/main.scss */
+.table-data table td,
+.table-data table th {
+  text-align: center;
+  padding: 8px;
+}
+/* line 667, ../sass/main.scss */
+.table-data table th {
+  height: 4.5rem;
+  background: #5c5c5c;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+/* line 675, ../sass/main.scss */
+.table-data table td {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  height: 5rem;
+}
+/* line 679, ../sass/main.scss */
+.table-data table td.service {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+/* line 683, ../sass/main.scss */
+.table-data table td.service b {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+/* line 688, ../sass/main.scss */
+.table-data table td .cod-prom {
+  width: 8.7rem;
+  height: 3.8rem;
+  padding: 0 0.8rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 699, ../sass/main.scss */
+.estado {
+  text-transform: uppercase;
+}
+/* line 701, ../sass/main.scss */
+.estado.activo {
+  color: #00b612;
+}
+/* line 704, ../sass/main.scss */
+.estado.inactivo {
+  color: #696969;
+}
+
+/*FIN CLASES CLIENTE*/
+@media (max-width: 960px) {
+  /* line 711, ../sass/main.scss */
+  .login-section {
+    flex-direction: column;
+  }
+
+  /* line 714, ../sass/main.scss */
+  .sign-form {
+    margin: 3rem auto;
+  }
+}
+@media (max-width: 790px) {
+  /* line 720, ../sass/main.scss */
+  .features {
+    flex-direction: column;
+  }
+  /* line 722, ../sass/main.scss */
+  .features div {
+    width: 100%;
+    height: 40rem;
+  }
+  /* line 726, ../sass/main.scss */
+  .features h2 {
+    font-size: 4.5rem;
+  }
+  /* line 729, ../sass/main.scss */
+  .features p {
+    font-size: 1.4rem;
+  }
+
+  /* line 733, ../sass/main.scss */
+  .login-section {
+    margin: 10rem auto;
+  }
+  /* line 735, ../sass/main.scss */
+  .login-section h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  /* line 738, ../sass/main.scss */
+  .login-section h1 strong {
+    font-size: 7.5rem;
+    font-weight: 700;
+  }
+  /* line 742, ../sass/main.scss */
+  .login-section h1 b {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  /* line 748, ../sass/main.scss */
+  .login-section .sign-form {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+
+  /* line 753, ../sass/main.scss */
+  .input-field {
+    width: 30.5rem;
+  }
+
+  /* line 756, ../sass/main.scss */
+  .form-submit-btn {
+    width: 30.5rem;
+  }
+
+  /* line 761, ../sass/main.scss */
+  .singup-header .wrap img {
+    max-height: 60%;
+  }
+
+  /* line 766, ../sass/main.scss */
+  .singup-form-container {
+    flex-direction: column;
+  }
+
+  /* line 769, ../sass/main.scss */
+  .signup-servicios {
+    visibility: hidden;
+    height: 2rem;
+  }
+
+  /* line 773, ../sass/main.scss */
+  .signup-select,
+  .signup-terms,
+  .signup-btn {
+    grid-column: 1;
+  }
+
+  /* line 778, ../sass/main.scss */
+  .signup-txt {
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  /* line 784, ../sass/main.scss */
+  .socials {
+    display: none;
+  }
+
+  /* line 788, ../sass/main.scss */
+  header .top-header {
+    justify-content: center;
+  }
+  /* line 791, ../sass/main.scss */
+  header .btn-create {
+    display: none;
+  }
+
+  /* line 796, ../sass/main.scss */
+  .login-section .btn-create-device {
+    display: block !important;
+    width: 30.5rem;
+  }
+
+  /* line 801, ../sass/main.scss */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    min-height: auto;
+  }
+  /* line 806, ../sass/main.scss */
+  footer .info-contact {
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+  /* line 810, ../sass/main.scss */
+  footer .footer-text {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  /* line 818, ../sass/main.scss */
+  .login-section {
+    margin: 7rem auto;
+  }
+  /* line 820, ../sass/main.scss */
+  .login-section h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  /* line 823, ../sass/main.scss */
+  .login-section h1 strong {
+    font-size: 5.5rem;
+    font-weight: 700;
+  }
+  /* line 827, ../sass/main.scss */
+  .login-section h1 b {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  /* line 833, ../sass/main.scss */
+  .login-section .sign-form {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+}

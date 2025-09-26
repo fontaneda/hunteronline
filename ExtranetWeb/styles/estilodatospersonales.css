@@ -1,0 +1,324 @@
+﻿/*datospersonales page*/
+.content_tab_datospersonales_master
+{
+    float: left;
+    height: 300px;
+    width: 950px;
+    padding: 20px 5px 5px 5px;
+}
+
+.content_tab_datos01
+{
+    float: left;
+    height: 220px;
+    width: 925px;
+    padding: 5px 5px; /*border: 1px #A1A1A1 solid;     -webkit-border-radius: 5px;     -moz-border-radius: 5px;     border-radius: 5px;*/
+    padding-left: 60px;
+}
+
+.content_renovacion_titulopage
+{
+    float: left;
+    width: 870px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.conten_boton
+{
+    float: left;
+    height: 25px;
+    width: 80px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.content_tab_datos02
+{
+    float: left;
+    height: 420px;
+    width: 925px;
+    padding: 5px 5px; /* border: 1px #A1A1A1 solid;     -webkit-border-radius: 5px;     -moz-border-radius: 5px;     border-radius: 5px;*/
+    padding-left: 60px;
+}
+
+.content_tab_boton_actualiza
+{
+    float: left;
+    height: 30px;
+    width: 800px;
+    text-align: center;
+}
+
+.content_tab_boton_actualiza_global
+{
+    float: left;
+    height: 25px;
+    width: 800px;
+    text-align: right;
+}
+
+.content_tab_boton_actualiza_global_2
+{
+    float: left;
+    height: 25px;
+    width: 90px;
+    text-align: right;
+}
+
+.content_tab_column01
+{
+    float: left;
+    height: 150px;
+    width: 390px;
+    padding: 5px 5px;
+}
+.content_tab_column02
+{
+    float: left;
+    height: 300px;
+    width: 390px;
+    padding: 5px 5px;
+}
+
+.content_tab_column03
+{
+    float: left;
+    height: 250px;
+    width: 390px;
+    padding: 5px 5px;
+}
+
+.content_tab_column04
+{
+    float: left;
+    height: 360px;
+    width: 390px;
+    padding: 5px 5px;
+}
+
+.column01_cell_label
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: right;
+    color: #3A3A3A;
+}
+
+.column01_cell_text
+{
+    float: left;
+    height: 20px;
+    width: 230px;
+    padding: 5px 5px;
+}
+
+.column02_cell_label
+{
+    float: left;
+    height: 20px;
+    width: 380px;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+.column02_cell_text
+{
+    float: left;
+    height: 20px;
+    width: 380px;
+    padding: 5px 5px;
+}
+.column02_cell_validators
+{
+    float: left;
+    height: 10px;
+    width: 380px;
+    padding: 2px 5px;
+    color: Red;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.column03_cell_label
+{
+    float: left;
+    height: 20px;
+    width: 160px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.column03_cell_button
+{
+    float: left;
+    height: 20px;
+    width: 110px;
+    padding: 5px 5px;
+}
+
+.column03_cell_text
+{
+    float: left;
+    height: 20px;
+    width: 250px;
+    padding: 5px 5px;
+}
+
+.column03_cell_validators
+{
+    float: left;
+    height: 10px;
+    width: 760px;
+    padding: 2px 5px;
+    color: Red;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.content_datospersonales_bloque_anterior
+{
+    float: left;
+    width: 980px;
+    height: 80px;
+    border-width: 0;
+    clear: both;
+    padding: 0 10px 10px 10px;
+    border: solid 1px #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.content_datospersonales_bloque
+{
+    float: left;
+    width: 980px;
+    height: 60px;
+    border-width: 0;
+    clear: both;
+    padding: 0 10px 10px 10px;
+}
+
+.content_datospersonales_master_linea
+{
+    float: left;
+    height: 25px;
+    width: 990px;
+    padding: 2px 2px 2px 2px;
+}
+
+.content_datospersonales_master
+{
+    float: inherit;
+    height: 25px;
+    width: 990px;
+    padding: 2px 2px 2px 2px;
+}
+
+.tab_general
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center; /*background-color: #575757;*/
+    background: url(../images/background/rojo.png) repeat-x 0 0; /*background:url(../images/background/naranja.png) repeat-x 0 0;*/
+}
+
+.tab_individual
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center; /*background-color: #575757;*/ /*background:url(../images/background/naranja.png) repeat-x 0 0;*/
+}
+
+.tab_individual:hover
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; /* background:url(../images/background/naranja.png) repeat-x 0 0;*/
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+}
+
+.tab_individual:selected
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; /* background:url(../images/background/naranja.png) repeat-x 0 0;*/
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+}
+
+html .RadTabStrip .rtsLevel1 .rtsSelected, html .RadTabStrip .rtsLevel1 .rtsSelected:hover
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; /*background:url(../images/background/naranja.png) repeat-x 0 0;*/
+    background-color: #575757;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+.content_renovacion_confirmardato_bloque_col1_parrafo
+{
+    float: left;
+    width: 80%;
+    height: auto;
+    margin-bottom: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+}
+
+.content_renovacion_confirmardato_bloque_col2_parrafo
+{
+    float: right; /*width: 170px;*/
+    width: 115px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.content_renovacion_titulo
+{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton_radwindows
+{
+    text-align: right;
+}
+
+.sec_RadTextBox_nuevo
+{
+    /*float: left;*/
+    display: flex;
+   height: 22px;
+    width: 480px;
+    margin-top: 5px;
+}

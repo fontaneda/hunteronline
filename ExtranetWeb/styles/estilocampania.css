@@ -1,0 +1,13 @@
+﻿/* File Created: marzo 1, 2016 */
+.content_tab_boton_campania
+{
+    height: 23px;
+    width: 81px;
+}
+
+.content_boton_campania
+{
+   float: left; 
+   padding: 3px 3px;
+   text-align: right;  
+}

@@ -1,0 +1,315 @@
+﻿body
+{    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:16px;
+    color: Black;
+    padding: 10px;
+    margin: 0px;    
+    background-color: #cccccc;
+    /*background-color: #C6C6C6;*/
+    color: #3A3A3A;
+}
+
+.regusu_content_principal
+{
+    float: left;
+    height: 620px;
+    width: 1002px;
+}
+
+.regusu_content_principal_bloque
+{
+    float: left; /*height: 450px;*/ /*height: 650px;*/
+    height: 500px;
+    margin: 20px;
+    width: 980px;
+   
+}
+
+.regusu_content_cuadro 
+{
+    float: left; 
+    height: 350px;
+    width: 740px;
+    margin: 5px 40px 5px 60px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+}
+
+.regusu_title_01
+{
+    float: left;
+    height: 28px;
+    width: 900px;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.regusu_title_02
+{
+    float: left;
+    height: 25px;
+    width: 900px;
+    padding-left: 65px;
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.rowElem04
+{
+    position: relative;
+    clear: both; /*min-height: 35px;*/
+    min-height: 120px;
+    top: 0px;
+    left: 0px; /*height: 31px;*/
+    height: 120px;
+    width: 267px;
+}
+
+.regusu_question_master
+{
+    float: left;
+    width: 849px;
+    /*height: 26px;*/
+    height: 50px;
+    margin: 5px 40px 5px 60px;
+    padding: 5px 5px;
+}
+
+.regusu_question_RadCaptcha
+{
+    float: left;
+    width: 880px;
+    height: 135px;
+    /*
+     width: 580px;
+     margin: 5px 40px 5px 320px;
+    padding: 5px 5px;*/
+     margin: 5px 40px 5px 60px;
+    padding: 5px 5px;
+}
+
+.regusu_secc_table_RadCaptcha
+{
+    float: left;
+    width: 270px;
+    height: 100px;
+    margin: 15px 15px 5px 5px;
+
+}
+
+.regusu_secc_table_RadCaptcha01
+{
+    float: left;
+    width: 185px;
+    height: 130px;
+    /*clear: both;
+    min-height: 100px;
+    top: 0px;
+    left: 0px;*/
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_secc_table_RadCaptcha03
+{
+    float: left;
+    width: 140px;
+    height: 100px;
+    padding-top:25px;
+}
+
+.regusu_secc_table_RadCaptcha02
+{
+    float: left;
+    width: 170px;
+    height: 130px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 130px;
+   
+}
+
+.regusu_secc_table_text01
+{
+    float: left;
+    width: 290px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_secc_table_boton01
+{
+    float: left;
+    width: 160px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+   /* background-image:url('../images/background/fondoBoton.png');*/
+}
+
+.regusu_secc_table_boton03
+{
+   float: left;
+    width: 100px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_secc_table_boton04
+{
+   float: left;
+    width: 885px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_secc_table_label02
+{
+    float: left;
+    width: 165px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 130px;
+}
+
+.regusu_secc_table_label03
+{
+    float: left;
+    width: 235px;
+    height: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+.regusu_secc_table_text03
+{
+    float: left;
+    width: 452px;
+    height: 16px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_bloque_col2_parrafo
+{
+    float: left;
+    width: 90%;
+    height: auto;
+   /* padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;*/
+    text-align: center;
+    margin: 5px 40px 5px 60px;
+    /*padding: 5px 5px;*/
+}
+
+.regusu_bloque_col3_parrafo
+{
+    float: left;
+    width: 100px;
+    height: auto;
+    padding-left: 370px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+.regusu_secc_banco_preguntas
+{
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 965px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.regusu_secc_identificacion
+{
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 965px;
+    /*height: 75px;*/
+     height: 45px;
+    margin-top: 5px;
+}
+
+.regusu_question_identificacion
+{
+    float: left;
+    width: 850px;
+    /*height: 53px;*/
+    height: 30px;
+    margin: 5px 40px 5px 60px;
+    padding: 5px 5px;
+}
+
+.regusu_title_01
+{
+    float: left;
+    height: 28px;
+    width: 900px;
+    padding-left: 20px;
+    padding-top: 2px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.regusu_secc_table_boton
+{
+    float: left;
+    width: 405px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-right:5px;
+    text-align: right;
+}
+
+.regusu_secc_table_boton1
+{
+    float: left;
+    width: 300px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left:5px;
+    text-align: left;
+    
+}
+
+.regusu_secc_table_boton2
+{
+    float: left;
+    width: 85px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left:5px;
+    text-align: left;
+    
+}

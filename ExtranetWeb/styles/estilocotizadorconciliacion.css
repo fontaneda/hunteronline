@@ -1,0 +1,67 @@
+﻿/*cotizadorconciliacion page*/
+.content_cotizadorconciliacion_toolbar
+{
+    float: left;
+    width: 1002px;
+}
+
+.content_cotizadorconciliacion_toolbar_icon
+{
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+.content_cotizadorconciliacion_separador
+{
+    float: left;
+    height: 3px;
+    margin: 2px 0 0 0;
+    width: 900px;
+}
+
+.content_cotizadorconciliacion_detalle
+{
+    float: left;
+    height: auto;
+    width: 1002px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: rgba(0, 44, 49, 0.1);
+}
+
+.content_cotizadorconciliacion_grid
+{
+    float: left;
+    height: 520px;
+    width: 1002px;
+    padding: 3px 0 0px 0px;
+}
+
+.content_cotizadorconciliacion_label
+{
+    float: left;
+    height: 23px;
+    width: 95px;
+    padding: 4px 2px 2px 2px;
+    text-align: justify;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.content_cotizadorconciliacion_textbox
+{
+    float: left;
+    height: 25px;
+    width: 149px;
+    padding: 2px 2px 2px 2px;
+    text-align: justify;
+    margin-right: 5px;
+    margin-top: 5px;
+}

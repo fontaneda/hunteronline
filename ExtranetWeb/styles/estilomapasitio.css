@@ -1,0 +1,324 @@
+﻿
+.mapa_cab
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 20;
+}
+
+.mapa_cabecera
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 0px;
+    text-align: center;
+    border:  2px solid #DADADA;
+}
+
+.mapa_cabecera_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 0px;
+    text-align: center;
+    border:  2px solid #DADADA;
+}
+
+.mapa_blanco
+{
+    float: left;
+    width: 220px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 20;
+}
+
+.mapa_tabla
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 0px;
+    margin-left: 50px;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    padding-left: 50px;
+    border:  0px solid #DADADA;
+}
+
+.mapa_titulo
+{
+    float: left;
+    height: 30px;
+    width: 991px;
+    text-align: justify;
+    margin: 5px 1px 0px 0px;
+    padding-left: 1px;
+    padding-top: 3px;
+    background-position: left top;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mapa_ini
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 20;
+}
+
+.mapa_inicio
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 0px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_inicio_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 0px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_cue
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_cuenta
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_cuenta_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_bien
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_bienes
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_bienes_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_pag
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_pagos
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_pagos_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_pagrea
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_pagorealizado
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_pagorealizado_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_tran
+{
+    float: left;
+    width: 700px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_transacciones
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_transacciones_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_contac
+{
+    float: left;
+    width: 560px;
+    height: 22px;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mapa_contactenos
+{
+    float: left;
+    height: 20px;
+    width: 240px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_contactenos_2
+{
+    float: left;
+    height: 20px;
+    width: 300px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 2px;
+    text-align: left;
+    border:  2px solid #DADADA;
+}
+
+.mapa_contenido
+{
+    float:              left;
+    height:             200px;
+    width:              250px;
+    position:           relative;
+    font-size:          14px;
+    margin:             0px 0px 0px 70px;
+}

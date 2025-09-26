@@ -1,0 +1,982 @@
+﻿/*slide*/
+#toppanel
+{
+    position:               absolute;
+    top:                    0;
+    width:                  255px;
+    z-index:                9999990 !important;
+    text-align:             left;
+    margin-left:            685px;
+    margin-top:             60px;
+    color:                  black !important;
+    height:                 32px;
+}
+#panel
+{
+    margin-left:            0px;                
+    margin-top:             0px;                
+    width:                  92%;                
+    height:                 295px;              
+    overflow:               hidden;             
+    position:               static;             
+    z-index:                9999991 !important; 
+    display:                none;               
+    background-image:       url('../Images/background/BackgroundCarroCompra.png');
+}
+#toppanelmaster
+{
+    position:               absolute;
+    top:                    0;
+    width:                  1024px;
+    z-index:                999;
+    text-align:             center;
+    margin-left:            auto;
+    margin-right:           auto;
+    margin-top:             65px;
+    color:                  White !important;
+}
+.clear
+{
+    clear:                  both;
+    height:                 0;
+    line-height:            0;
+    color:                  White !important;
+}
+.clearfix:after
+{
+    content:                ".";
+    display:                block;
+    height:                 0;
+    clear:                  both;
+    visibility:             hidden;
+}
+.clearfix
+{
+    display:                inline-block;
+}
+
+* html .clearfix
+{
+    height:                 1%;
+}
+.clearfix
+{
+    display:                block;
+}
+.clearfix
+{
+    height:                 1%;
+}
+.clearfix
+{
+    display:                block;
+}
+#panel .content
+{
+    margin:                 0 auto;
+    padding-top:            15px;
+    padding-left:           10px;
+    padding-right:          10px;
+    text-align:             left;
+    background-color:       transparent;    
+}
+#panel .content .left
+{
+    width:                  278px;
+    float:                  left;
+    padding:                0 15px;
+    border-left:            1px solid #333;
+}
+#panel .content .left2
+{
+    width:                  100px;
+    float:                  left;
+    border-left:            1px solid #333;
+}
+#panel .content .left3
+{
+    width:                  280px;
+    float:                  left;
+    padding:                0 15px;
+    border-left:            1px solid #333;
+}
+#panel .content .left4
+{
+    width:                  165px;
+    float:                  left;
+    padding:                0 15px;
+}
+#panel .content .left5
+{
+    width:                  350px;
+    float:                  left;
+    padding:                0 15px;
+}
+#panel .content .left6
+{
+    width:                  260px;
+    float:                  left;
+    padding:                0 15px;
+    border-left:            1px solid #333;
+}
+#panel .content .left7
+{
+    width:                  100px;
+    float:                  left;
+    padding:                0 15px;
+    border-left:            1px solid #333;
+}
+#panel .content .right
+{
+    border-right:           1px solid #333;
+}
+#panel .content form
+{
+    margin:                 0 0 10px 0;
+}
+#panel .content input:focus.field
+{
+    background:             #545454;
+}
+#panel .content .left .dxe
+{
+    float:                  left;
+    width:                  125px;
+    color:                  White;
+}
+.tab
+{
+    height:                 42px;
+    z-index:                999;
+    color:                  White;
+    width:                  100%;
+    display:                block;
+    z-index:                9999992 !important;
+}
+.tab ul.login
+{
+    display:                block;
+    position:               relative;
+    float:                  right;
+    clear:                  right;
+    height:                 31px;
+    width:                  245px;
+    line-height:            42px;
+    margin:                 0;
+    right:                  11px;
+    color:                  white;
+    font-size:              80%;
+    text-align:             center;
+    top:                    2px;
+    z-index:                9999993 !important;
+}
+.tab ul.login li.left_anterior
+{
+    background:             url(../images/background/tab_l.png) no-repeat left 0;
+    height:                 42px;
+    width:                  30px;
+    padding:                0;
+    margin:                 0;
+    display:                block;
+    float:                  left;
+}
+.tab ul.login li.right_anterior
+{
+    background:             url(../images/background/tab_r.png) no-repeat left 0;
+    height:                 42px;
+    width:                  30px;
+    padding:                0;
+    margin:                 0;
+    display:                block;
+    float:                  left;
+}
+.tab ul.login li_anterior
+{
+    text-align:             left;
+    padding:                0 6px;
+    display:                block;
+    float:                  left;
+    height:                 42px;
+    background:             url(../images/background/tab_m.png) repeat-x 0 0;
+}
+.tab ul.login li a_anterior
+{
+    color:                  rgb(255,192,0);
+    font-size:              14px;
+}
+.tab ul.login li a_anterior:hover
+{
+    color:                  white;
+}
+
+.tab ul.login li.left
+{
+    height:                 42px;
+    width:                  30px;
+    padding:                0;
+    margin:                 0;
+    display:                block;
+    float:                  left;
+}
+.tab ul.login li.right
+{
+    height:                 42px;
+    width:                  30px;
+    padding:                0;
+    margin:                 0;
+    display:                block;
+    float:                  left;
+}
+.tab ul.login li
+{
+    text-align:             left;
+    padding:                0 6px;
+    display:                block;
+    float:                  left;
+    height:                 32px;
+    width:                  225px;
+    color:                  White;
+    /*color:                  Black;*/
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;
+    background-color:       transparent;
+    z-index:                9999994 !important;
+}
+.tab ul.login li a
+{
+    color:                  white;
+    /*color:                  black;*/
+    font-size:              14px;
+    margin:                 3px 0px 0px 0px;
+    height:                 80%;
+    width:                  90%;
+    z-index:                9999995 !important;
+}
+.tab ul.login li a:hover
+{
+    color:                  white;
+    /*color:                  black;*/
+}
+.tab .sep
+{
+    color:                  #414141;
+}
+.tab a.open, .tab a.close, .tab a.close2
+{
+    height:                 32px;
+    line-height:            30px !important;
+    padding-left:           40px !important;
+    cursor:                 pointer;
+    display:                block;
+    width:                  100%;
+    position:               relative;
+}
+.tab a.open
+{
+    background:             url(../images/background/CartAmarillo2.png) no-repeat left 0;
+    height:                 35px !important;
+    background-position:    bottom left !important;
+}
+.tab a.close, a.close2
+{
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;
+    margin:                 0px 0px 0px 40px !important;
+    height:                 28px !important;
+    padding-left:           50px !important;
+    width:                  100px !important;
+    background-image:       url('../Images/background/amarillo.png');
+}
+.tab a:hover.open
+{
+    background:             url(../images/background/CartAmarillo2.png) no-repeat left 0;
+}
+.tab a:hover.close
+{
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;
+}
+.tab a:hover.close2
+{
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;
+}
+.content_confirmardato_totales
+{
+    float:                  left;
+    width:                  100%;
+    height:                 auto;
+    margin-right:           0px;
+    padding:                3px 0 3px 5px;
+    color:                  White;
+}
+.content_confirmardato_totales_grupo
+{
+    float:                  left;
+    width:                  100%;
+    height:                 30px;
+    font-size:              large;
+}
+.content_confirmardato_totales_icono
+{
+    float:                  left;
+    width:                  10%;
+    height:                 30px;
+    padding-right:          10px;
+    background-image:       url('../images/background/CarroAmarillo.png');
+    background-repeat:      no-repeat;
+    background-position:    left top;
+    font-size:              large;
+}
+.content_confirmardato_totales_icono_label
+{
+    float:                  left;
+    width:                  50%;
+    padding:                5px 5px 0px 50px;
+    font-size:              17px;
+}
+.content_confirmardato_totales_labeldivisionprincipal
+{
+    float:                  left;
+    width:                  95%;
+    height:                 1px;
+    margin:                 2px 1px 2px 2px;
+    padding:                3px 1px 0 1px;
+    border-top:             1px solid #FF7804;
+}
+.content_confirmardato_totales_labeldivision
+{
+    float:                  left;
+    width:                  95%;
+    height:                 1px;
+    margin:                 2px 1px 2px 2px;
+    padding:                3px 1px 0 1px;
+    border-top:             1px solid #999900;
+}
+.content_confirmardato_totales_labelcantidad
+{
+    float:                  left;
+    width:                  60%;
+    height:                 35px;
+    margin:                 2px 1px 2px 2px;
+    padding:                3px 1px 0 1px;
+    font-size:              12px;
+}
+.content_confirmardato_totales_textboxcantidad
+{
+    float:                  left;
+    width:                  30%;
+    height:                 20px;
+    margin:                 2px 1px 2px 2px;
+    padding:                10px 5px 1px 1px;
+    text-align:             right;
+    font-size:              14px;
+}
+.content_confirmardato_totales_label
+{
+    float:                  left;
+    width:                  60%;
+    height:                 15px;
+    margin:                 2px 1px 2px 2px;
+    padding:                3px 1px 0 1px;
+    font-size:              12px;
+}
+.content_confirmardato_totales_textbox
+{
+    float:                  left;
+    width:                  30%;
+    height:                 15px;
+    margin:                 2px 1px 2px 2px;
+    padding:                1px 5px 1px 1px;
+    text-align:             right;
+    font-size:              12px;
+}
+.content_cantidad_items_carro_compra
+{
+    text-align:             center;
+    vertical-align:         middle;
+    color:                  White;
+    /*color:                  Black;*/
+    font-size:              15px;
+    margin:                 0px 0px 0px -31px;
+    height:                 20px;
+    width:                  20px;
+    background-color:       transparent;
+    position:               absolute;
+    font-weight:            bold;
+    visibility:             visible;
+}
+
+
+
+
+
+/*
+
+#panel2 .content
+{
+    width:          1010px;
+    margin:         0 auto;
+    padding-top:    15px;
+    text-align:     left;
+    font-size:      0.85em;
+}
+#panel2 .content .left
+{
+    width:          300px;
+    float:          left;
+    padding:        0 15px;
+    border-left:    1px solid #333;
+}
+#panel2 .content .left2
+{
+    width:          100px;
+    float:          left;
+    border-left:    1px solid #333;
+}
+#panel2 .content .left3
+{
+    width:          280px;
+    float:          left;
+    padding:        0 15px;
+    border-left:    1px solid #333;
+}
+#panel2 .content .left4
+{
+    width:          150px;
+    float:          left;
+    padding:        0 15px;
+}
+#panel2 .content .left5
+{
+    width:          280px;
+    float:          right;
+    padding:        0 15px;
+    border-left:    1px solid #333;
+}
+#panel2 .content .right
+{
+    border-right:   1px solid #333;
+}
+#panel2 .content form
+{
+    margin:         0 0 10px 0;
+}
+#panel2 .content input:focus.field
+{
+    background:     #545454;
+}
+
+#panel h1
+{
+    font-size: 1.6em;
+    padding: 5px 0 10px;
+    margin: 0;
+    color: white;
+}
+#panel h2
+{
+    font-size: 1.2em;
+    padding: 10px 0 5px;
+    margin: 0;
+    color: white;
+}
+#panel p
+{
+    margin: 5px 0;
+    padding: 0;
+}
+#panel a
+{
+    text-decoration: none;
+    color: #15ADFF;
+}
+#panel a:hover
+{
+    color: white;
+}
+#panel a-lost-pwd
+{
+    display: block;
+    float: left;
+}
+
+.crit_titulo
+{
+    float: left;
+    width: 200px;
+    height: 30px;
+    color: White;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+.crit_titulo .icon_titulo_anio
+{
+    float: left;
+    width: 25px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_anio.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_titulo_mes
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_mes.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_titulo_oficina
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_office.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_titulo_grupo
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_grupo.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_titulo_subgrupo
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_subgrupo.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_titulo_tipo
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/icon_tipo2.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.crit_titulo .icon_desc
+{
+    float: left;
+    padding: 5px 0;
+}
+.crit_check
+{
+    float: left;
+    width: 116px;
+    height: 25px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+#panel2
+{
+    width: 100%;
+    height: 430px;
+    color: #999999;
+    background: #272727;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    display: none;
+}
+#panel2 h1
+{
+    font-size: 1.6em;
+    padding: 5px 0 10px;
+    margin: 0;
+    color: white;
+}
+#panel2 h2
+{
+    font-size: 1.2em;
+    padding: 10px 0 5px;
+    margin: 0;
+    color: white;
+}
+#panel2 p
+{
+    margin: 5px 0;
+    padding: 0;
+}
+#panel2 a
+{
+    text-decoration: none;
+    color: #15ADFF;
+}
+#panel2 a:hover
+{
+    color: white;
+}
+#panel2 a-lost-pwd
+{
+    display: block;
+    float: left;
+}
+.dxeRadioButtonList label
+{
+    color: white;
+    margin-right: 6px;
+}
+.dxeBase
+{
+    color: White !important;
+    font-weight: bolder;
+}
+
+.content_carrito_compra_totales
+{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    padding: 3px 0 3px 5px;
+}
+.content_carrito_compra_totales_grupo
+{
+    float: left;
+    width: 240px;
+    height: 30px;
+    font-size: large;
+}
+.content_carrito_compra_totales_icono
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-image: url('../images/background/Shopping_Cart_30.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    font-size: large;
+}
+.content_carrito_compra_totales_icono_label
+{
+    float: left;
+    width: 160px;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.content_carrito_compra_totales_labelcantidad
+{
+    float: left;
+    width: 150px;
+    height: 35px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.content_carrito_compra_totales_textboxcantidad
+{
+    float: left;
+    width: 75px;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    padding: 10px 5px 1px 1px;
+    text-align: right;
+    font-size: x-large;
+}
+.content_carrito_compra_totales_labeldivision
+{
+    float: left;
+    width: 230px;
+    height: 2px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    border-top: 2px solid white;
+}
+.content_carrito_compra_totales_label
+{
+    float: left;
+    width: 120px;
+    height: 12px;
+    margin: 2px 1px 2px 2px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.content_carrito_compra_totales_textbox
+{
+    float: left;
+    width: 105px;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+}
+.tabmaster
+{
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    z-index: 200000;
+}
+.tabmaster ul.login
+{
+    display: block;
+    position: relative;
+    float: right;
+    clear: right;
+    height: 42px;
+    width: auto;
+    font-weight: bold;
+    line-height: 42px;
+    margin: 0;
+    right: 430px;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+}
+.tabmaster ul.login li.left_anterior
+{
+    background: url(../images/background/tab_l.png) no-repeat left 0;
+    height: 42px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.tabmaster ul.login li.right_anterior
+{
+    background: url(../images/background/tab_r.png) no-repeat left 0;
+    height: 42px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.tabmaster ul.login li_anterior
+{
+    text-align: left;
+    padding: 0 6px;
+    display: block;
+    float: left;
+    height: 42px;
+    background: url(../images/background/tab_m.png) repeat-x 0 0;
+}
+.tabmaster ul.login li a_anterior
+{
+    color: rgb(255,192,0);
+    font-size: 14px;
+}
+.tabmaster ul.login li a_anterior:hover
+{
+    color: white;
+}
+.tabmaster ul.login li.left
+{
+    height: 42px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.tabmaster ul.login li.right
+{
+    height: 42px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.tabmaster ul.login li
+{
+    text-align: left;
+    padding: 0 6px;
+    display: block;
+    float: left;
+    height: 42px;
+    color: White;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #000000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);    
+}
+.tabmaster ul.login li a
+{
+    color: white;
+    font-size: 14px;
+}
+.tabmaster ul.login li a:hover
+{
+    color: white;
+}
+.tabmaster .sep
+{
+    color: #414141;
+}
+.tabmaster a.openmaster, .tabmaster a.closemaster, .tabmaster a.close2
+{
+    height: 20px;
+    line-height: 20px !important;
+    padding-left: 30px !important;
+    cursor: pointer;
+    display: block;
+    width: 220px;
+    position: relative;
+    top: 11px;
+}
+.tabmaster a.openmaster
+{
+    background: url(../images/background/Shopping_Cart.png) no-repeat left 0;
+}
+.tabmaster a.closemaster, a.close2
+{
+    background: url(../images/background/Shopping_Cart.png) no-repeat left 0;
+}
+.tabmaster a:hover.open
+{
+    background: url(../images/background/Shopping_Cart.png) no-repeat left 0;
+}
+.tabmaster a:hover.closemaster
+{
+    background: url(../images/background/Shopping_Cart.png) no-repeat left 0;
+}
+.tabmaster a:hover.close2
+{
+    background: url(../images/background/Shopping_Cart.png) no-repeat left 0;
+}
+#panelmaster
+{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+#panelmaster h1
+{
+    font-size: 1.6em;
+    padding: 5px 0 10px;
+    margin: 0;
+    color: white;
+}
+#panelmaster h2
+{
+    font-size: 1.2em;
+    padding: 10px 0 5px;
+    margin: 0;
+    color: white;
+}
+#panelmaster p
+{
+    margin: 5px 0;
+    padding: 0;
+}
+#panelmaster a
+{
+    text-decoration: none;
+    color: #15ADFF;
+}
+#panelmaster a:hover
+{
+    color: white;
+}
+#panelmaster a-lost-pwd
+{
+    display: block;
+    float: left;
+}
+#panelmaster .content
+{
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 340px;
+    padding-right: 340px;
+    text-align: left;
+}
+#panelmaster .content .left
+{
+    width: 278px;
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+#panelmaster .content .left2
+{
+    width: 100px;
+    float: left;
+    border-left: 1px solid #333;
+}
+#panelmaster .content .left3
+{
+    width: 280px;
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+#panelmaster .content .left4
+{
+    width: 165px;
+    float: left;
+    padding: 0 15px;
+}
+#panelmaster .content .left5
+{
+    width: 350px;
+    float: left;
+    padding: 0 15px;
+}
+#panelmaster .content .left6
+{
+    width: 260px;
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+#panelmaster .content .left7
+{
+    width: 100px;
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+#panelmaster .content .right
+{
+    border-right: 1px solid #333;
+}
+#panelmaster .content form
+{
+    margin: 0 0 10px 0;
+}
+#panelmaster .content input:focus.field
+{
+    background: #545454;
+}
+*/

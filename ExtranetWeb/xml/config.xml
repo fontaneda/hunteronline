@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<configuration>
+  <configSections>
+    <setting name="3SUpdateHashCode">
+      <value>39785641</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Debug">
+      <value>N</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="TipoConexion">
+      <value>ConexionParalelo</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="FormaConexion">
+      <value>SQL</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Mail">
+      <value>soporteHunterOnline@carsegsa.com</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="SmtpClient">
+      <value>10.100.89.34</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="MailError">
+      <value>soporteHunterOnline@carsegsa.com</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Caption">
+      <value>3S | Strategic Software Solutions</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Base">
+      <value>3S_FINAL_MIGRADA</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="ConexionParaleloSQL">
+	    <!--SUPERMAN/ S3_TURNOS POR HOSTNAME-->
+		<!--<value>71DD0E0D96CE6BD2F145396F4AB58D88D02ADBC9226A682E93FE50614B3E478DF461951557C1C0008F998474AD4A4636774E5C5BD50CA891B8719AFC85E1B32546B7B16977DBD8351D66A77D66B342972E15C45D2FB4FA6586AB702228C7D618995944598FF228E6655DABE5EB46375756A37589E2076D81</value>-->
+		<!--BANSHEE / EXTRANET-->																																																											
+		<!--<value>E3C2022CB4FCEF3EB664A425642CB00EBF26587B5454E36E87DCF945C01FA3473F8B640B8700298E074EBDC8BAA56F68BE2FCD4F486CE98D9683518CE9A58CCC8C36B947125642539756EF232E9FDBD8F5A67E52FE10D669651C327D13133794AA67EEC5A0DF11E22F177D27D56731C074592DDD8C4882739DFF74F663DD629B89266B3DB06D662D</value>-->
+		<!--SUPERMAN/ S3_TURNOS POR IP-->																																																																	
+		<value>C17A43522AE3E7FEA2752A38CD46E13C11BFA9F4DF3811FCDFC89715B82BDD9704896FFEBD9F5C87392AFB62FDBD013F3C11795681D99E864F60668F242C2A425CD14517810784D0D88A946D060B112234B9BC69A177DA8DD11F3D97C7AD240B4431882ABE42C9FDF7C45D9FB92E8362380645BF5D3D36FF1B3C138FE1064E16</value>	
+		<!--HULK / EXTRANET-->     																																																												
+		<!--<value>ADDE4E2B9BF4795A891617ACBDE83EAED9C08C9502081C2ED4593F24C20EE63E2135B5E83319AE702B5E6DC2086504DE775B8820AB0601F4B9896A6C07A2A30178EACCEE8DCD91231912D5C2139F698A780731920DB1B1B19CA2A63CE74699C97961B7931F73BB410DAFD6668C26228661EB3E575842556B724787DFE3D7D239</value>	-->
+		<estado>1</estado>
+    </setting>
+  </configSections>
+</configuration>

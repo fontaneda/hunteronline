@@ -1,0 +1,96 @@
+﻿.menu1
+{
+    background: url(../images/background/rojo.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    z-index: 2000000;
+}
+
+.menu2
+{
+    background: url(../images/background/naranja.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    z-index: 200000;
+}
+
+.menu3
+{
+    background: url(../images/background/azul.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    z-index: 200000;
+}
+
+.menu4
+{
+    background: url(../images/background/turquesa.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 200000;
+}
+
+.menu5
+{
+    background: url(../images/background/verde.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 200000;
+}
+
+.menu6
+{
+    background: url(../images/background/amarillo.png) repeat-x 0 0;
+    height: 42px;
+    z-index: 999;
+    color: White;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 200000;
+}
+
+.boton_color
+{
+    font-weight: bold;
+    font-size: x-small;
+    text-align: center;
+    color: White;
+    background-color: #000000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.9) inset;
+}
+
+
+.goButtonClassHov .rbText
+{
+    color: Yellow !important;
+}
+

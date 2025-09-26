@@ -1,0 +1,269 @@
+﻿/*transacciondetalle page*/
+.content_transacciondetalle_toolbar
+{
+    float: left;
+    width: 100%;
+}
+
+.content_transacciondetalle_toolbar_icon
+{
+    float: left;
+    width: 34px;
+    margin-right: 5px;
+}
+
+.content_transacciondetalle_separador
+{
+    float: left;
+    height: 3px;
+    margin: 2px 0 0 0;
+    width: 100%;
+}
+
+.content_transacciondetalle_separador1
+{
+    float: left;
+    height: 10px;
+    margin: 2px 0 0 0;
+    width: 100%;
+}
+
+.content_transacciondetalle_cabecera
+{
+    float: left;
+    height: auto;
+    padding: 3px 0 3px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+    background: rgba(0, 44, 49, 0.1);
+}
+
+.content_transacciondetalle_cabecera_label
+{
+    float: left;
+    height: 23px;
+    width: 95px;
+    padding: 4px 2px 2px 2px;
+    text-align: justify;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.content_transacciondetalle_cabecera_textbox
+{
+    float: left;
+    height: 25px;
+    width: 149px;
+    padding: 2px 2px 2px 2px;
+    text-align: justify;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.content_transacciondetalle_cabecera_textbox2
+{
+    float: left;
+    height: 25px;
+    width: 80px;
+    padding: 2px 2px 2px 2px;
+    text-align: justify;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.content_transacciondetalle_cabecera_textbox3
+{
+    float: left;
+    height: 25px;
+    width: 330px;
+    padding: 2px 2px 2px 2px;
+    text-align: justify;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.content_transacciondetalle_cabecera_separador
+{
+    float: left;
+    height: 2px;
+    margin: 2px 0 0 0;
+    border-bottom: 1px solid #AEAEAE;
+    width: 100%;
+}
+.content_transacciondetalle_gridcontrol
+{
+    float: left;
+    height: 260px;
+    width: 100%;
+    padding: 3px 0 3px 0px;
+}
+
+.content_transacciondetalle_totales
+{
+    float: left;
+    height: auto;
+    width: 250px;
+    padding: 3px 0 3px 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+    background: rgba(0, 44, 49, 0.1);
+}
+
+.content_transacciondetalle_totales_label
+{
+    float: left;
+    height: 12px;
+    margin: 2px 1px 2px 2px;
+    width: 120px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+}
+
+.content_transacciondetalle_totales_label2
+{
+    float: left;
+    height: 23px;
+    margin: 2px 1px 2px 2px;
+    width: 120px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.content_transacciondetalle_totales_calculo
+{
+    float: left;
+    height: 20px;
+    margin: 2px 1px 2px 2px;
+    width: 105px;
+    padding: 1px 5px 1px 1px;
+    text-align: right;
+}
+
+.content_transacciondetalle_totales_calculo2
+{
+    float: left;
+    height: 23px;
+    margin: 2px 1px 2px 2px;
+    width: 105px;
+    padding: 1px 5px 1px 1px;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    font-size: medium;
+}
+
+.content_transacciondetalle_totales2
+{
+    float: left;
+    height: auto;
+    width: 1000px;
+    padding: 3px 0 3px 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+}
+
+.content_transacciondetalle_totales_label3
+{
+    float: left;
+    height: 12px;
+    margin: 2px 1px 2px 2px;
+    width: 750px;
+    padding: 3px 1px 0 1px;
+    font-weight: bold;
+}
+
+/*colores del grid por estilos*/
+
+.RadGrid_MyCustomSkin
+{
+     /*border: 1px solid #fff;*/
+     color: #333;
+     background-color: transparent;
+}
+
+.RadGrid_MyCustomSkin .rgHeader a
+{
+     color: White;
+}
+ 
+.RadGrid_MyCustomSkin .rgHeader,
+.RadGrid_MyCustomSkin th.rgResizeCol
+{
+     /*background-color: #878787;*/
+     background:url(../images/background/verde.png) repeat-x 0 0;
+     color: White;
+     border-bottom: 1px solid white;
+     border-right: 1px solid white;
+}
+
+.RadGrid_MyCustomSkin .rgMultiHeaderRow th.rgHeader,
+.RadGrid_MyCustomSkin .rgMultiHeaderRow th.rgResizeCol
+{
+     border: 0 solid white;
+     border-width: 0 1px 1px 0;
+}
+
+
+.RadGrid_MyCustomSkin .rgAltRow
+{
+    background: #e9e9e9;
+     
+}
+
+.RadGrid_MyCustomSkin .rgRow
+{
+     background: #f5f5f5;
+}
+
+.RadGrid_MyCustomSkin .rgHoveredRow
+{
+     background: #f5f0d2;
+}
+
+.RadGrid_MyCustomSkin .rgNumPart a:hover,
+.RadGrid_MyCustomSkin .rgNumPart a.rgCurrentPage:hover
+{
+     background-color: #878787;
+     border-color: white;
+     color: white;
+}
+ 
+.RadGrid_MyCustomSkin .rgNumPart a.rgCurrentPage
+{
+     border: 1px solid #e9e9e9;
+     color: #878787;
+     /*color:White;*/
+}
+ 
+.RadGrid_MyCustomSkin .rgFooter td,
+.RadGrid_MyCustomSkin .rgFooterWrapper
+{
+     border-top: 1px solid;
+     border-color: White;
+}
+ 
+.RadGrid_MyCustomSkin .rgPager
+{
+    background-color: #e9e9e9;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+}
+ 
+.RadGrid_MyCustomSkin .rgPager .rgStatus
+{
+     border: solid;
+     border-color: White;
+     border-width: 1px 0 0 0;
+}
+
+.RadGrid_MyCustomSkin .rgSelectedRow 
+{
+    background: #d7e8fe;
+}

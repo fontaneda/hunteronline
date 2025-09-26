@@ -1,0 +1,26 @@
+﻿.content_estado_grid
+{
+    float: left;
+    height: 125px;
+    width: 100%;
+}
+.content_estado_documento
+{
+    float: left;
+    height: 360px;
+    width: 100%;
+    margin-top:5px;
+}
+.content_estado_toolbar
+{
+    float: left;
+    height: 25px;
+    width: 100%;
+    padding: 5px 0;
+}
+.content_estado_toolbar_mail
+{
+    float: right;
+    height: 25px;
+    width: 400px;
+}

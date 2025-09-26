@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExtranetWeb", "ExtranetWeb\ExtranetWeb.vbproj", "{D62372A3-40EC-4C8F-8961-D42CCD0D1A6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D62372A3-40EC-4C8F-8961-D42CCD0D1A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62372A3-40EC-4C8F-8961-D42CCD0D1A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62372A3-40EC-4C8F-8961-D42CCD0D1A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62372A3-40EC-4C8F-8961-D42CCD0D1A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA40E151-160C-4EC0-B951-CD0821B415B9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://siniestro/tfs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ExtranetWeb\\ExtranetWeb.vbproj
+		SccProjectName1 = ExtranetWeb
+		SccLocalPath1 = ExtranetWeb
+	EndGlobalSection
+EndGlobal

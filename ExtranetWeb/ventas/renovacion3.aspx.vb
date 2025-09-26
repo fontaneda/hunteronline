@@ -1,0 +1,708 @@
+﻿Imports Telerik.Web.UI
+Imports System.Globalization
+Imports System.Net.Mail
+Imports System.IO
+Imports Novacode
+Imports System.Drawing
+Imports DevExpress.Web
+
+'renovacion20140219
+Public Class renovacion3
+    Inherits System.Web.UI.Page
+
+    Dim value_iphost, value_pchost, cadenaitems, identificacion As String
+    Dim opcion, value_usuarioid, userid, newrow, newcolumn As Integer
+
+    Dim zerovalue As String = "0.00"
+    Dim zerovalueconsigno As String = "$0.00"
+    Dim value_cantidad_renovar As Integer
+
+    Dim value_cell_vehiculo As Decimal
+    Dim value_cell_item_numero As Integer
+    Dim value_cell_precio_venta As Decimal
+    Dim value_cell_promocion_codigo As String
+    Dim value_cell_promocion_valor As Decimal
+    Dim value_cell_descuento_porcentaje As Decimal
+    Dim value_cell_descuento_valor As Decimal
+    Dim value_cell_precio_total As Decimal
+    Dim value_cell_iva_valor As Decimal
+    Dim value_cell_precio_cliente As Decimal
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO LOAD DEL FORMULARIO DE RENOVACION
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Try
+
+            If Not IsPostBack Then
+                If Session.Item("user") IsNot Nothing Then
+                    ConsultaProductoCliente(Session.Item("user"))
+                End If
+            End If
+
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: MÉTODO PARA LA CONSULTA DE PRODUCTOS A RENOVAR DEL CLIENTE AL INICIAR EL FORMULARIO
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub ConsultaProductoCliente(ByVal identificacion As String)
+        Try
+
+            Dim DTCstGeneral As New System.Data.DataSet
+
+            DTCstGeneral = RenovacionAdapter.ConsultaProductoCliente2(identificacion)
+
+            If DTCstGeneral.Tables(0).Rows.Count > 0 Then
+                Session("DTProductoCliente") = DTCstGeneral
+                Me.productocliente.DataSource = DTCstGeneral
+                Me.productocliente.DataBind()
+            Else
+                ProveedorMensaje.ShowMessage(rntMensajes, "No existen datos de productos de cliente.", ProveedorMensaje.MessageStyle.ConsultaSinDatos)
+            End If
+
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO PRERENDER DEL GRID
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub rgdproductocliente_PreRender(ByVal sender As Object, ByVal e As System.EventArgs) Handles productocliente.PreRender
+        Try
+            If Not IsPostBack Then
+                For Each item As GridDataItem In Me.productocliente.MasterTableView.Items
+
+                    Dim chkI As ASPxCheckBox = TryCast(item.FindControl("chkI"), ASPxCheckBox)
+                    Dim cmbaniorenovar As RadComboBox = DirectCast(item.FindControl("cmbaniorenovar"), RadComboBox)
+                    Dim cmbpromocion As RadComboBox = DirectCast(item.FindControl("cmbpromocion"), RadComboBox)
+
+                    cmbaniorenovar.Items.Add(New RadComboBoxItem("1", 1))
+                    cmbaniorenovar.Items.Add(New RadComboBoxItem("2", 2))
+                    cmbaniorenovar.Items.Add(New RadComboBoxItem("3", 3))
+                    cmbaniorenovar.Items.Add(New RadComboBoxItem("4", 4))
+                    cmbaniorenovar.Items.Add(New RadComboBoxItem("5", 5))
+                    cmbaniorenovar.SelectedValue = 1
+
+                    value_cell_vehiculo = item("CODIGO_VEHICULO").Text
+                    value_cell_item_numero = item("ITEM").Text
+
+                    Dim DTCstGeneral As New System.Data.DataSet
+
+                    DTCstGeneral = RenovacionAdapter.ConsultaListadoPromocion(Session.Item("user"), value_cell_vehiculo, value_cell_item_numero)
+
+                    If DTCstGeneral.Tables(0).Rows.Count > 0 Then
+                        cmbpromocion.DataSource = DTCstGeneral
+                        cmbpromocion.DataValueField = "CODIGO"
+                        cmbpromocion.DataTextField = "DESCRIPCION"
+                        cmbpromocion.DataBind()
+                        cmbpromocion.SelectedValue = "0"
+                    End If
+                Next
+
+                'Dim groupHeaderItems As GridItem() = productocliente.MasterTableView.GetItems(GridItemType.GroupHeader)
+                'For Each grpHeaderItem As GridGroupHeaderItem In groupHeaderItems
+                '    grpHeaderItem.Expanded = IIf(grpHeaderItem.GroupIndex.Length > 1, False, True)
+                'Next
+
+                CalculaTotalesPorFila()
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CHECKED DEL CHECKBOX POR FILA
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub chkI_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Try
+            CalcularTotales()
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO VALIDATION DEL CHECKBOX POR FILA
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub chkI_Validation(ByVal sender As Object, ByVal e As DevExpress.Web.ValidationEventArgs)
+        Try
+            Dim item As GridDataItem = TryCast(TryCast(sender, ASPxCheckBox).Parent, GridTableCell).Item
+            Dim vehiculo As Decimal = item("CODIGO_VEHICULO").Text
+            Dim productonombre As String = item("PRODUCTO_NOMBRE").Text
+            Dim anio As Integer = item("ANIO_RENOVACION").Text
+
+            If e.Value = True And anio > 1 Then
+                For Each itemtmp As GridDataItem In Me.productocliente.MasterTableView.Items
+                    Dim chkI As ASPxCheckBox = TryCast(itemtmp.FindControl("chkI"), ASPxCheckBox)
+                    Dim vehiculotmp As Decimal = itemtmp("CODIGO_VEHICULO").Text
+                    Dim productonombretmp As String = itemtmp("PRODUCTO_NOMBRE").Text
+                    Dim aniotmp As Integer = itemtmp("ANIO_RENOVACION").Text
+
+                    If vehiculo = vehiculotmp And productonombre = productonombretmp And aniotmp < anio And chkI.Checked = False Then
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Debe seleccionar los años a renovar de manera consecutiva.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        e.IsValid = False
+                        e.Value = False
+                        Exit Sub
+                    End If
+                Next
+            End If
+
+            If e.Value = False Then
+                For Each itemtmp As GridDataItem In Me.productocliente.MasterTableView.Items
+                    Dim chkI As ASPxCheckBox = TryCast(itemtmp.FindControl("chkI"), ASPxCheckBox)
+                    Dim vehiculotmp As Decimal = itemtmp("CODIGO_VEHICULO").Text
+                    Dim productonombretmp As String = itemtmp("PRODUCTO_NOMBRE").Text
+                    Dim aniotmp As Integer = itemtmp("ANIO_RENOVACION").Text
+
+                    If vehiculo = vehiculotmp And productonombre = productonombretmp And anio < aniotmp And chkI.Checked = True Then
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Debe desmarcar los años a renovar de manera consecutiva.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        e.IsValid = False
+                        e.Value = True
+                        Exit Sub
+                    End If
+                Next
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO DEL COMBOBOX AÑOS A RENOVAR PARA ACTUALIZAR LOS VALORES DE LA FILA
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub cmbaniorenovar_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Try
+            'For Each item As GridDataItem In Me.productocliente.MasterTableView.Items
+
+            '    Dim cmbaniorenovar As RadComboBox = DirectCast(item.FindControl("cmbaniorenovar"), RadComboBox)
+
+            '    If cmbaniorenovar.SelectedValue = 0 Then
+            '        item("VALOR").Text = zerovalue1
+            '        item("SUBTOTAL").Text = zerovalue1
+            '        item("TOTAL").Text = zerovalue1
+            '    Else
+            '        Dim DTCstGeneral As New System.Data.DataSet
+
+            '        DTCstGeneral = extranetconsulta.ConsultaPrecioProducto(item("PRODUCTO").Text, cmbaniorenovar.SelectedValue)
+
+            '        If DTCstGeneral.Tables(0).Rows.Count > 0 Then
+            '            value_cell_valor = DTCstGeneral.Tables(0).Rows(0)("PRECIO")
+            '            value_cell_subtotal = DTCstGeneral.Tables(0).Rows(0)("PRECIO")
+            '            value_cell_total = DTCstGeneral.Tables(0).Rows(0)("PRECIO")
+
+            '            item("VALOR").Text = If(value_cell_valor = 0, zerovalue, value_cell_valor)
+            '            item("SUBTOTAL").Text = If(value_cell_subtotal = 0, zerovalue, value_cell_subtotal)
+            '            item("TOTAL").Text = If(value_cell_total = 0, zerovalue, value_cell_total)
+            '        End If
+            '    End If
+            'Next
+            'CalcularTotales()
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO DEL COMBOBOX CATÁLOGO DE PROMOCIONES PARA ACTUALIZAR LOS VALORES DE LA FILA
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub cmbPromocion_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Try
+            CalculaTotalesPorFila()
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO TEXT CHANGED AL CAMBIAR EL PORCENTAJE DE DESCUENTO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub txtdescuento_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Try
+            CalculaTotalesPorFila()
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: MÉTODO PARA CALCULAR LOS TOTALES DE LA RENOVACION
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub CalcularTotales()
+        Try
+            value_cell_precio_total = 0
+            value_cell_iva_valor = 0
+            value_cell_precio_cliente = 0
+            value_cantidad_renovar = 0
+
+            For Each item As GridDataItem In Me.productocliente.MasterTableView.Items
+
+                Dim chkI As ASPxCheckBox = TryCast(item.FindControl("chkI"), ASPxCheckBox)
+
+                If chkI.Checked = True Then
+                    value_cell_precio_total = value_cell_precio_total + Convert.ToDecimal(Libreria.Parse(item("PRECIO_TOTAL").Text))
+                    value_cell_iva_valor = value_cell_iva_valor + Convert.ToDecimal(Libreria.Parse(item("IVA").Text))
+                    value_cell_precio_cliente = value_cell_precio_cliente + Convert.ToDecimal(Libreria.Parse(item("PRECIO_CLIENTE").Text))
+                    value_cantidad_renovar = value_cantidad_renovar + 1
+                End If
+            Next
+
+            lblCantidadProducto.Text = value_cantidad_renovar.ToString()
+            lblsubtotal.Text = If((value_cell_precio_total = 0), zerovalue, Math.Round(value_cell_precio_total, 2))
+            lbliva.Text = If((value_cell_iva_valor = 0), zerovalue, Math.Round(value_cell_iva_valor, 2))
+            lbltotal.Text = If((value_cell_precio_cliente = 0), zerovalueconsigno, String.Format(CultureInfo.GetCultureInfo(1033), "{0:C2}", value_cell_precio_cliente))
+            lblTotalCompra1.Text = "Total de su Compra: " + If((value_cell_precio_cliente = 0), zerovalueconsigno, String.Format(CultureInfo.GetCultureInfo(1033), "{0:C2}", value_cell_precio_cliente))
+            lblTotalCompra2.Text = "Total de su Compra: " + If((value_cell_precio_cliente = 0), zerovalueconsigno, String.Format(CultureInfo.GetCultureInfo(1033), "{0:C2}", value_cell_precio_cliente))
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: CALCULA TOTALES POR CADA FILA
+    ''' </summary>
+    Private Sub CalculaTotalesPorFila()
+        Try
+            For Each item As GridDataItem In Me.productocliente.MasterTableView.Items
+
+                Dim chkI As ASPxCheckBox = TryCast(item.FindControl("chkI"), ASPxCheckBox)
+                Dim cmbpromocion As RadComboBox = DirectCast(item.FindControl("cmbpromocion"), RadComboBox)
+                Dim txtdescuento As RadNumericTextBox = TryCast(item.FindControl("txtdescuento"), RadNumericTextBox)
+
+                value_cell_promocion_codigo = cmbpromocion.SelectedValue
+                value_cell_descuento_porcentaje = CType(txtdescuento.Value, Double)
+                value_cell_vehiculo = item("CODIGO_VEHICULO").Text
+                value_cell_item_numero = item("ITEM").Text
+
+                Dim DTCstGeneral As New System.Data.DataSet
+
+                DTCstGeneral = RenovacionAdapter.ProcesaValoresFila(Session.Item("user"), value_cell_vehiculo, value_cell_item_numero, value_cell_promocion_codigo, value_cell_descuento_porcentaje)
+
+                If DTCstGeneral.Tables(0).Rows.Count > 0 Then
+                    value_cell_precio_venta = DTCstGeneral.Tables(0).Rows(0)("PRECIO_VENTA")
+                    value_cell_promocion_valor = DTCstGeneral.Tables(0).Rows(0)("VALOR_PROMOCION")
+                    value_cell_descuento_valor = DTCstGeneral.Tables(0).Rows(0)("VALOR_DESCUENTO")
+                    value_cell_precio_total = DTCstGeneral.Tables(0).Rows(0)("PRECIO_TOTAL")
+                    value_cell_iva_valor = DTCstGeneral.Tables(0).Rows(0)("IVA")
+                    value_cell_precio_cliente = DTCstGeneral.Tables(0).Rows(0)("SUBTOTAL")
+
+                    item("PRECIO_VENTA").Text = If(value_cell_precio_venta = 0, zerovalue, value_cell_precio_venta)
+                    item("VALOR_PROMOCION").Text = If(value_cell_promocion_valor = 0, zerovalue, value_cell_promocion_valor)
+                    item("VALOR_DESCUENTO").Text = If(value_cell_descuento_valor = 0, zerovalue, value_cell_descuento_valor)
+                    item("PRECIO_TOTAL").Text = If(value_cell_precio_total = 0, zerovalue, value_cell_precio_total)
+                    item("IVA").Text = If(value_cell_iva_valor = 0, zerovalue, value_cell_iva_valor)
+                    item("PRECIO_CLIENTE").Text = If(value_cell_precio_cliente = 0, zerovalue, value_cell_precio_cliente)
+                End If
+            Next
+
+            CalcularTotales()
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON CONTINUAR DE LA FICHA CONFIRMAR DATO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnConfirmarDatoContinuar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnConfirmarDatoContinuar.Click
+        Try
+            'EnviaEMailConfirmacion()
+
+            If Libreria.Parse(lbltotal.Text) = 0 Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe seleccionar minimo un producto para continuar.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                Exit Sub
+            End If
+
+            RadTabPrincipal.Tabs(0).Enabled = False
+            RadTabPrincipal.Tabs(1).Enabled = True
+            RadTabPrincipal.Tabs(2).Enabled = False
+
+            RadTabPrincipal.SelectedIndex = 1
+            RadMultiPage1.SelectedIndex = 1
+
+            Dim DTCstGeneral As New System.Data.DataSet
+
+            DTCstGeneral = RenovacionAdapter.ConsultaDatosCliente(Session.Item("user"))
+
+            If DTCstGeneral.Tables(0).Rows.Count > 0 Then
+                txtFormaPagoNombre.Text = DTCstGeneral.Tables(0).Rows(0)("NOMBRE_COMPLETO")
+                txtFormaPagoIdentificacion.Text = DTCstGeneral.Tables(0).Rows(0)("ID_CLIENTE")
+                txtFormaPagoDireccion.Text = DTCstGeneral.Tables(0).Rows(0)("DIRECCION")
+                txtFormaPagoTelefono.Text = DTCstGeneral.Tables(0).Rows(0)("TELEFONO")
+                txtFormaPagoEmail.Text = DTCstGeneral.Tables(0).Rows(0)("EMAIL")
+                If DTCstGeneral.Tables(0).Rows(0)("TIPO_IDENTIFICACION") = "CED" Then rblTipoIdentificacion.SelectedIndex = 0
+                If DTCstGeneral.Tables(0).Rows(0)("TIPO_IDENTIFICACION") = "NAT" Then rblTipoIdentificacion.SelectedIndex = 1
+                If DTCstGeneral.Tables(0).Rows(0)("TIPO_IDENTIFICACION") = "PUB" Then rblTipoIdentificacion.SelectedIndex = 1
+                If DTCstGeneral.Tables(0).Rows(0)("TIPO_IDENTIFICACION") = "PRI" Then rblTipoIdentificacion.SelectedIndex = 1
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    Private Sub EnviaEMailConfirmacion()
+        Try
+            Dim DTCstGeneral As New System.Data.DataSet
+            Dim DsTransaccion As New dsTransaccion
+
+            DTCstGeneral = RenovacionAdapter.ConsultaOrdenTransaccion(36)
+            DsTransaccion.Orden.Merge(DTCstGeneral.Tables(0))
+            DsTransaccion.OrdenDetalle.Merge(DTCstGeneral.Tables(1))
+            DsTransaccion.AcceptChanges()
+
+            'EMailConfirmacion.CreateEMail("rochoa@carsegsa.com", DsTransaccion)
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON CONTINUAR DE LA FICHA FORMA PAGO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnFormaPagoContinuar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnFormaPagoContinuar.Click
+        Try
+            If String.IsNullOrEmpty(txtFormaPagoNombre.Text.Trim) Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe ingresar el Nombre del dueño de la Tarjeta de Crédito.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                txtFormaPagoNombre.Focus()
+                Exit Sub
+            End If
+
+            If String.IsNullOrEmpty(txtFormaPagoIdentificacion.Text.Trim) Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe ingresar la Identificación del dueño de la Tarjeta de Crédito.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                txtFormaPagoIdentificacion.Focus()
+                Exit Sub
+            End If
+
+            If String.IsNullOrEmpty(txtFormaPagoDireccion.Text.Trim) Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe ingresar la dirección del dueño de la Tarjeta de Crédito.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                txtFormaPagoDireccion.Focus()
+                Exit Sub
+            End If
+
+            If String.IsNullOrEmpty(txtFormaPagoTelefono.Text.Trim) Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe ingresar el Teléfono del dueño de la Tarjeta de Crédito.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                txtFormaPagoTelefono.Focus()
+                Exit Sub
+            End If
+
+            If String.IsNullOrEmpty(txtFormaPagoEmail.Text.Trim) Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe ingresar el Email.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                txtFormaPagoTelefono.Focus()
+                Exit Sub
+            End If
+
+            If chkTerminosCondiciones.Checked = False Then
+                ProveedorMensaje.ShowMessage(rntMensajes, "Debe aceptar los términos y condiciones de renovación para continuar.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                chkTerminosCondiciones.Focus()
+                Exit Sub
+            End If
+
+            RadTabPrincipal.Tabs(0).Enabled = False
+            RadTabPrincipal.Tabs(1).Enabled = False
+            RadTabPrincipal.Tabs(2).Enabled = True
+
+            CreateDataSetClienteVehiculoRenovacion()
+            RadTabPrincipal.SelectedIndex = 2
+            RadMultiPage1.SelectedIndex = 2
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON REGRESAR DE LA FICHA FORMA PAGO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnFormaPagoRegresar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnFormaPagoRegresar.Click
+        Try
+            RadTabPrincipal.Tabs(0).Enabled = True
+            RadTabPrincipal.Tabs(1).Enabled = False
+            RadTabPrincipal.Tabs(2).Enabled = False
+
+            RadTabPrincipal.SelectedIndex = 0
+            RadMultiPage1.SelectedIndex = 0
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON REGRESAR DE LA FICHA CONFIRMAR PEDIDO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnConfirmarPedidoRegresar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnConfirmarPedidoRegresar.Click
+        Try
+            RadTabPrincipal.Tabs(0).Enabled = False
+            RadTabPrincipal.Tabs(1).Enabled = True
+            RadTabPrincipal.Tabs(2).Enabled = False
+
+            RadTabPrincipal.SelectedIndex = 1
+            RadMultiPage1.SelectedIndex = 1
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON CANCELAR DE LA FICHA CONFIRMAR PEDIDO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnConfirmarPedidoCancelar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnConfirmarPedidoCancelar.Click
+        RadTabPrincipal.Tabs(0).Enabled = True
+        RadTabPrincipal.Tabs(1).Enabled = False
+        RadTabPrincipal.Tabs(2).Enabled = False
+
+        RadTabPrincipal.SelectedIndex = 0
+        RadMultiPage1.SelectedIndex = 0
+
+        ProveedorMensaje.ShowMessage(rntMensajes, "Ha cancelado el proceso de compra. Por favor inténtalo nuevamente.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+        Exit Sub
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO CLICK DEL BOTON IR A PAGAR DE LA FICHA CONFIRMAR PEDIDO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnConfirmarPedidoIrAPagar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnConfirmarPedidoIrAPagar.Click
+        RadTabPrincipal.Tabs(0).Enabled = False
+        RadTabPrincipal.Tabs(1).Enabled = False
+        RadTabPrincipal.Tabs(2).Enabled = True
+
+        RadTabPrincipal.SelectedIndex = 2
+        RadMultiPage1.SelectedIndex = 2
+
+        ProveedorMensaje.ShowMessage(rntMensajes, "Su pago de renovación de productos ha sido efectuada exitosamente!", ProveedorMensaje.MessageStyle.ConfirmacionAccion)
+        Exit Sub
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 15/01/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: METODO PARA LA CREACION DEL DATASET DE PRODUCTOS SELECCIONADOS A RENOVAR DEL CLIENTE 
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub CreateDataSetClienteVehiculoRenovacion()
+        Try
+            Dim DTCstGeneral As New System.Data.DataSet
+            Dim DTDataTable As New DataTable
+
+            DTDataTable.Columns.Add("CODIGO_VEHICULO", GetType(Decimal))
+            DTDataTable.Columns.Add("GRUPO_NOMBRE", GetType(String))
+            DTDataTable.Columns.Add("PRODUCTO_NOMBRE", GetType(String))
+            DTDataTable.Columns.Add("ITEM_NOMBRE", GetType(String))
+            DTDataTable.Columns.Add("PRECIO_VENTA", GetType(Decimal))
+            DTDataTable.Columns.Add("PROMOCION", GetType(String))
+            DTDataTable.Columns.Add("VALOR_PROMOCION", GetType(Decimal))
+            DTDataTable.Columns.Add("VALOR_DESCUENTO", GetType(Decimal))
+            DTDataTable.Columns.Add("PRECIO_TOTAL", GetType(Decimal))
+
+            For Each item As GridDataItem In Me.productocliente.MasterTableView.Items
+                Dim chkI As ASPxCheckBox = TryCast(item.FindControl("chkI"), ASPxCheckBox)
+                Dim cmbaniorenovar As RadComboBox = DirectCast(item.FindControl("cmbaniorenovar"), RadComboBox)
+                Dim cmbpromocion As RadComboBox = DirectCast(item.FindControl("cmbpromocion"), RadComboBox)
+
+                If chkI.Checked = True Then
+
+                    value_cell_promocion_valor = Libreria.Parse(item("VALOR_PROMOCION").Text)
+                    value_cell_descuento_valor = Libreria.Parse(item("VALOR_DESCUENTO").Text)
+
+                    DTDataTable.Rows.Add(item("CODIGO_VEHICULO").Text,
+                                         item("GRUPO_NOMBRE").Text,
+                                         item("PRODUCTO_NOMBRE").Text,
+                                         item("ITEM_NOMBRE").Text,
+                                         Libreria.Parse(item("PRECIO_VENTA").Text),
+                                         cmbpromocion.Text,
+                                         Libreria.Parse(item("VALOR_PROMOCION").Text),
+                                         Libreria.Parse(item("VALOR_DESCUENTO").Text),
+                                         Libreria.Parse(item("PRECIO_TOTAL").Text))
+                End If
+            Next
+
+            DTCstGeneral.Tables.Add(DTDataTable)
+            Session("DTProductoClienteRenovacion") = DTCstGeneral
+            Me.rgdproductoclienterenovacion.DataSource = DTCstGeneral
+            Me.rgdproductoclienterenovacion.DataBind()
+            Me.lblConfirmarPedidoSubtotal.Text = Me.lblsubtotal.Text
+            Me.lblConfirmarPedidoIva.Text = Me.lbliva.Text
+            Me.lblConfirmarPedidoCantidadProducto.Text = Me.lblCantidadProducto.Text
+            Me.lblConfirmarPedidoTotalPagar.Text = Me.lbltotal.Text
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO SELECTEDINDEXCHANGED DE LA LISTA DE IDENTIFICACIONES
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub rblTipoIdentificacion_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles rblTipoIdentificacion.SelectedIndexChanged
+        Try
+            If rblTipoIdentificacion.SelectedValue = "1" Then txtFormaPagoIdentificacion.MaxLength = 10
+            If rblTipoIdentificacion.SelectedValue = "2" Then txtFormaPagoIdentificacion.MaxLength = 13
+            If rblTipoIdentificacion.SelectedValue = "3" Then txtFormaPagoIdentificacion.MaxLength = 20
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO TEXTCHANGED DEL CONTROL DE IDENTIFICACION
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub txtFormaPagoIdentificacion_TextChanged(ByVal sender As Object, ByVal e As EventArgs) Handles txtFormaPagoIdentificacion.TextChanged
+        Try
+            If rblTipoIdentificacion.SelectedValue <> "3" Then
+                If Not String.IsNullOrEmpty(txtFormaPagoIdentificacion.Text) Then
+                    If Not IsNumeric(txtFormaPagoIdentificacion.Text) Then
+                        txtFormaPagoIdentificacion.Focus()
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese una Identificación correcta.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        Exit Sub
+                    End If
+                    If rblTipoIdentificacion.SelectedValue = "1" And txtFormaPagoIdentificacion.Text.Length <> 10 Then
+                        txtFormaPagoIdentificacion.Focus()
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese una Identificación correcta.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        Exit Sub
+                    End If
+                    If rblTipoIdentificacion.SelectedValue = "2" And txtFormaPagoIdentificacion.Text.Length <> 13 Then
+                        txtFormaPagoIdentificacion.Focus()
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese una Identificación correcta.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        Exit Sub
+                    End If
+                    If Not RenovacionAdapter.EsValidaIdentificacion(txtFormaPagoIdentificacion.Text) Then
+                        txtFormaPagoIdentificacion.Focus()
+                        ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese una Identificación correcta.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                        Exit Sub
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO TEXTCHANGED DEL CONTROL DE TELEFONO
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub txtFormaPagoTelefono_TextChanged(ByVal sender As Object, ByVal e As EventArgs) Handles txtFormaPagoTelefono.TextChanged
+        Try
+            If Not String.IsNullOrEmpty(txtFormaPagoTelefono.Text) Then
+                If Not IsNumeric(txtFormaPagoTelefono.Text) Then
+                    txtFormaPagoIdentificacion.Focus()
+                    ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese un Teléfono correcto.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                    Exit Sub
+                End If
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' FECHA: 17/02/2014
+    ''' AUTOR: RONALD OCHOA
+    ''' COMENTARIO: EVENTO TEXTCHANGED DEL CONTROL DE EMAIL
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub txtFormaPagoEmail_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtFormaPagoEmail.TextChanged
+        Try
+            If Not String.IsNullOrEmpty(txtFormaPagoEmail.Text) Then
+                If Not EMailConfirmacion.ValidarEMail(txtFormaPagoEmail.Text) Then
+                    txtFormaPagoEmail.Focus()
+                    ProveedorMensaje.ShowMessage(rntMensajes, "Ingrese un Email correcto.", ProveedorMensaje.MessageStyle.OperacionInvalida)
+                    Exit Sub
+                End If
+            End If
+        Catch ex As Exception
+            ExceptionHandler.Captura_Error(ex)
+        End Try
+    End Sub
+
+End Class

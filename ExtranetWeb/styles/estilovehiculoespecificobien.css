@@ -1,0 +1,388 @@
+﻿/*vehiculoespecificobien page*/
+#vehespbiencontenedor_maestro
+{
+    float: left;
+    width: 1020px;
+    height: 600px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vehespbientitulo
+{
+    float: left;
+    height: 32px;
+    width: 993px;
+    text-align: justify;
+    margin: 7px 5px;
+    padding-left: 5px;
+    padding-top: 7px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chequeo_tit1
+{
+    float: left;
+    height: 28px;
+    width: 660px;
+    padding-left: 0px;
+    padding-top: 5px;
+    background-position: left top;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vehespbieninformacion
+{
+    float: left;
+    height: 500px;
+    width: 1000px;
+    text-align: justify;
+    margin: 3px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+}
+
+.titulocabecerabien
+{
+    float: left;
+    height: 28px;
+    width: 990px;
+    text-align: justify;
+    margin: 3px 3px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.vehespbientitulo_informacion
+{
+    float: left;
+    color:#333333;
+    font-weight: bold;
+    height:30px;
+    width: 988px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehespbieninformacion_1
+{
+    float: left;
+    height: 440px;
+    width: 993px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+    /*border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;*/
+}
+
+.vehespbientitulo_informacion_2
+{
+    float: left;
+    height:15px;
+    width: 988px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_11
+{
+    float: left;
+    color:#333333;
+    font-weight: bold;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_11
+{
+    float: left;
+    height: 30px;
+    width: 730px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_21
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_21
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.bientitulo_12
+{
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.biendato_12
+{
+    float: left;
+    height: 30px;
+    width: 280px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_22
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_22
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_13
+{
+    float: left;
+    color:#333333;
+    font-weight: bold;
+    height: 20px;
+    width: 170px;
+    text-align: center;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_13
+{
+    float: left;
+    height: 30px;
+    width: 280px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.bientitulo_23
+{
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.biendato_23
+{
+    float: left;
+    height: 30px;
+    width: 690px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_14
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_14
+{
+    float: left;
+    height: 30px;
+    width: 320px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_15
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_15
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_16
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_16
+{
+    float: left;
+    height: 30px;
+    width: 690px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.bientitulo_24
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.biendato_24
+{
+    float: left;
+    height: 30px;
+    width: 500px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehespbiendar_baja
+{
+    float: left;
+    color: #333333;
+    height: 30px;
+    width: 400px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehespbienbotom_enviar
+{
+    float: left;
+    height: 180px;
+    width: 950px;
+    padding-left: 2px;
+    padding-top: 220px;
+    background-position: right;
+}
+
+.vehespbienpiepagina
+{
+    float: left;
+    height: 28px;
+    width: 550px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.vehesppiepagina
+{
+    float: left;
+    height: 25px;
+    width: 600px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.vehesppiepagina_botones
+{
+    float: left;
+    height: 25px;
+    width: 300px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+}

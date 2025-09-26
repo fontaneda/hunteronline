@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  height: 100%;
+}
+
+BODY {
+  background-image: radial-gradient(red, #B31924);
+  color: #fff !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  height: 3.75rem !important;
+  line-height: 3.75rem !important;
+  border-radius: 0.6rem !important;
+  color: black;
+}
+
+.logo-top img {
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  .logo-top img {
+    max-width: 70%;
+  }
+}
+
+.datos-ingreso .msn-ingreso {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 720px) {
+  .datos-ingreso .msn-ingreso {
+    font-size: 1.2rem;
+  }
+}
+
+.datos-ingreso .msn-ingreso span {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .datos-ingreso .msn-ingreso span {
+    font-size: 1.8rem;
+  }
+}
+
+.btn-envio {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  background: #E6B13A;
+  width: 18rem;
+  border: none;
+  border-radius: 9rem !important;
+}
+
+.icon-list {
+  margin-top: 6rem;
+}
+
+.icon-list span {
+  display: inline-block;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.icon-list span img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 2.0;
+    padding: .4em 1.4em .3em .8em;
+    width: 300px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: -20px auto;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+    font-weight:normal;
+}
+.RadCaptcha{
+    width: 300px;
+    margin:-10px auto;
+    border: 1px dotted #606060;
+    font-family: Serif;}
+.imageClass
+{
+    margin: auto auto;
+}

@@ -1,0 +1,330 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="master.master.vb" Inherits="ExtranetWeb.master" %>
+<!DOCTYPE html>
+<html lang="es">
+    <head id="Head1" runat="server">
+        <script type = "text/javascript">
+             function MostrarSettings() {
+                 var settings = document.getElementById('settings_btn');
+                 settings.style.display = 'block';
+             }
+             function OcultarSettings() {
+                 var settings = document.getElementById('settings_btn');
+                 settings.style.display = 'none';
+             }
+        </script>
+        <script type="text/javascript">
+            (function () {
+                var ldk = document.createElement('script');
+                ldk.type = 'text/javascript';
+                ldk.async = true;
+                ldk.src = 'https://s.cliengo.com/weboptimizer/60ad0079029bad002aa75194/60ed9e00c6117c002ac53bf0.js?platform=onboarding_modular';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ldk, s);
+            })();
+        </script>
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hunter Online - Pagos de Servicios Online</title>
+        <link rel="stylesheet" href="../styles/css_mkt/int-styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+    </head>
+    <body class="grey-back">
+    <input type="checkbox" class="checkbox" id="click" hidden>
+    <section class="left-menu">
+        <label for="click">
+            <div class="menu-icon">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+        </label>
+        <a href="#" class="logo-ho">
+            <img src="../images/img_mkt/logo-hunter-online2.png" alt="Logo Hunter Online">
+        </a>
+        <div class="user-info">
+            <img src="../images/img_mkt/user-avatar.png" alt="User Avatar">
+            <h2>
+                <asp:Label ID="lblnombresmaster" Text="Nombres" runat="server" />
+            </h2>
+            <ul>
+                <li>
+                    <img src="../images/img_mkt/mail-icon.png" alt=""> 
+                    <asp:Label ID="lblemailmaster" Text="Email" runat="server" />
+                </li>
+                <li>
+                    <i>
+                        <img src="../images/img_mkt/ic_phone_android_48px 1.png" alt="">
+                    </i> 
+                    <asp:Label ID="lblcelularmaster" Text="0900000000" runat="server" />
+                </li>
+            </ul>
+        </div>
+
+        <nav class="main-menu">
+            <ul>
+                <li id="lielement01" runat="server">
+                    <a href="datospersonales.aspx">
+                        <img src="../images/img_mkt/cuenta-icon.png" alt=""> 
+                        Mi Cuenta
+                    </a>
+                </li>
+                <li id="lielement02" runat="server">
+                    <a href="vehiculo.aspx">
+                        <img src="../images/img_mkt/bienes-icon.png" alt=""> 
+                        Bienes Protegidos
+                    </a>
+                </li>
+                <li id="lielement03" runat="server">
+                    <a href="renovacion.aspx">
+                        <img src="../images/img_mkt/pago-icon.png" alt=""> 
+                        Pagos de Servicios
+                    </a>
+                </li>
+                <li id="lielement06" runat="server">
+                    <a href="cobro.aspx">
+                        <img src="../images/img_mkt/cobros-factura-icon.png" alt=""> 
+                        Cobro de Facturas
+                    </a>
+                </li>
+                <%--<li id="lielement07" runat="server">
+                    <a href="Ventas.aspx">
+                        <img src="../images/img_mkt/ventas-icon.png" alt=""> 
+                        Ventas
+                    </a>
+                </li>--%>
+                <li id="lielement04" runat="server">
+                    <a href="mistransacciones.aspx">
+                        <img src="../images/img_mkt/transacciones-icon.png" alt=""> 
+                        Mis Transacciones
+                    </a>
+                </li>
+                <li id="lielement05" runat="server">
+                    <a href="documentos_electronicos.aspx">
+                        <img src="../images/img_mkt/documentos-icon.png" alt=""> 
+                        Documentos Electrónicos
+                    </a>
+                </li>
+                <%--<li id="lielement09" runat="server">
+                    <a href="registrousuariomantenimiento.aspx">
+                        <img src="../images/img_mkt/mantenimiento-icon.png" alt=""> 
+                        Usuario Mantenimientos
+                    </a>
+                </li>--%>
+            </ul>
+        </nav>
+        <a href="vehiculoturno.aspx" class="turnos-btn">
+            <img src="../images/img_mkt/turnos-icon-white.png" alt=""> 
+            generar turno
+        </a>
+        <button id="btnsalirweb" runat="server" class="salir-btn" >
+            <img src="../images/img_mkt/salir-icon.png" alt="">
+            salir
+        </button>
+        <section class="socials-copy">
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com/hunterecuador/">
+                        <img src="../images/img_mkt/fb.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/hunterecuador">
+                        <img src="../images/img_mkt/ig.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/hunterecuador">
+                        <img src="../images/img_mkt/tweet.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="copy">
+                Copyright Carseg S.A.<br/> Derechos Reservados 2020
+            </p>
+        </section>
+    </section>
+    <nav class=" nav-responsive">
+        <ul>
+            <li id="licellelement01" runat="server">
+                <a href="datospersonales.aspx">
+                    <img src="../images/img_mkt/cuenta-icon.png" alt=""> 
+                    Mi Cuenta
+                </a>
+            </li>
+            <li id="licellelement02" runat="server">
+                <a href="vehiculo.aspx">
+                    <img src="../images/img_mkt/bienes-icon.png" alt=""> 
+                    Bienes Protegidos
+                </a>
+            </li>
+            <li id="licellelement03" runat="server">
+                <a href="renovacion.aspx">
+                    <img src="../images/img_mkt/pago-icon.png" alt=""> 
+                    Pagos de Servicios
+                </a>
+            </li>
+            <li id="licellelement07" runat="server">
+                <a href="cobro.aspx">
+                    <img src="../images/img_mkt/cobros-factura-icon.png" alt=""> 
+                    Cobro de Facturas
+                </a>
+            </li>
+            <li id="licellelement08" runat="server">
+                <a href="Ventas.aspx">
+                    <img src="../images/img_mkt/ventas-icon.png" alt=""> 
+                    Ventas
+                </a>
+            </li>
+            <li id="licellelement04" runat="server">
+                <a href="mistransacciones.aspx">
+                    <img src="../images/img_mkt/transacciones-icon.png" alt=""> 
+                    Mis Transacciones
+                </a>
+            </li>
+            <li id="licellelement05" runat="server">
+                <a href="documentos_electronicos.aspx">
+                    <img src="../images/img_mkt/documentos-icon.png" alt=""> 
+                    Documentos Electrónicos
+                </a>
+            </li>
+            <%--<li id="licellelement09" runat="server">
+                <a href="registrousuariomantenimiento.aspx">
+                    <img src="../images/img_mkt/mantenimiento-icon.png" alt=""> 
+                    Usuario Mantenimientos
+                </a>
+            </li>--%>
+            <li id="licellelement06" runat="server">
+                <a href="vehiculoturno.aspx">
+                    <img src="../images/img_mkt/transacciones-icon.png" alt=""> 
+                    Generar Turno
+                </a>
+            </li>
+            <li>
+                <a href="#" id="hrefsalir" runat="server">
+                    <img src="../images/img_mkt/salir-icon.png" alt="">
+                    Salir
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="content">
+<%--    <form id="Form1" action="#" runat="server">--%>
+        <section id="sectiontitulomaster" class="title-content red-border" runat="server">
+            <!-- Clase que se aplica a los titulos quitarla para el master -->
+            <h1 id="h1titulomaster" runat="server" >
+                <asp:Label ID="lbltitulomaster" Text="Titulo" runat="server" />
+            </h1>
+            <div class="content-top-menu">
+                <ul>
+                    <li>
+                        <div class="cart-class">
+                            <p>
+                                total<br/> 
+                                <b>
+                                    <asp:Label ID="lbltotalmaster" Text="0.00" runat="server" />
+                                </b>
+                            </p>
+                            <button class="btn-small cart-btn">
+                                <img src="../images/img_mkt/cart-icon.png" alt="">
+                                    <asp:Label ID="lblcantidadmaster" Text="0" runat="server" />
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="settings_btn" class="btn-small" style="display:none;">
+                            <img src="../images/img_mkt/settings-icon.png" alt="">
+                        </button>
+                    </li>
+                    <ul id="menu_settings" class="menu-settings arrow_top">
+                        <li>
+                            <a href="CambioClienteSoporte.aspx">
+                                Cliente/soporte
+                            </a>
+                        </li>
+                       <li>
+                            <a href="precioIngreso.aspx">
+                                Modificar precios
+                            </a>
+                        </li>
+                         <li>
+                            <a href="precioAprobacion.aspx">
+                                Aprobar precios
+                            </a>
+                        </li>
+                         <li>
+                            <a href="pagogeneralink.aspx">
+                                Generar link de pagos
+                            </a>
+                        </li>
+                        <%--<li>
+                            <a href="contratoenvio.aspx">
+                                Contratos del cliente
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Modificacioncliente.aspx">
+                                Datos/cliente
+                            </a>
+                        </li>--%>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+        <section class="content-body">
+            <!-- Aqui va la info de las secciones -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--<section class="contact">
+                <h2>
+                    Contáctenos
+                </h2>
+                
+                <form action="#" method="post" >
+                    <label for="cmbmotivocont">Motivo</label>
+                    <select class="select-css contact-select-class" id="cmbmotivocont" name="cmbmotivocont" runat="server">
+                    </select>
+                    <label for="txtmensajecont">Mensaje</label>
+                    <textarea name="txtmensajecont" id="txtmensajecont" cols="20" rows="10"  runat="server">
+                    </textarea>
+                    <button class="btn-class btn-contact" id="btnenviarcontacto" runat="server" >
+                        Enviar
+                    </button>
+                </form>--%>
+
+                <%--<ul class="link-contact">
+                    <li>
+                        <a href="#">
+                            <b>WHATSAPP</b> 0994408582
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <b>CALL CENTER</b> (04)600-4640
+                        </a>
+                    </li>
+                </ul>
+                <ul class="contact-link-bottom">
+                    <li>
+                        <a href="#">
+                            <img src="../images/img_mkt/quetion-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Términos de Uso y Privacidad
+                        </a>
+                        <a href="#">
+                           Mapa del Sitio
+                        </a>
+                    </li>
+                </ul>
+            </section>--%>
+        </section>
+<%--    </form>--%>
+    </section>
+    <script type="text/javascript" src="../js/main.js">
+    </script>
+    </body>
+</html>

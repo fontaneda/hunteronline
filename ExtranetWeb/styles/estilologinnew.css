@@ -1,0 +1,365 @@
+﻿/*login page*/
+.Container
+{
+    margin: auto auto;
+    padding: 0px;
+    width: 850px;
+    background-color: #ffffff;
+    height: 460px;
+}
+
+.inhalt
+{
+    padding: 0px;
+    width: 1024px;
+    height: 768px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #414141;
+    /*background: url('../Images/background/Fondo_Inicio.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;*/
+}
+
+#banner2
+{
+    padding: 0px;
+    width: 1024px; 
+    height: 482px;
+    /*margin-bottom: 24px;*/
+    /*background-color: rgba(26, 26, 26, 0.4);*/ /*background-color: #71171B;*/
+    /*background: url('../Images/background/Rojo_Superior.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.2) inset;*/
+}
+
+.banner3
+{
+    width: 974px; 
+    height: 457px;
+    float: left;
+    margin: 25px 25px 0 25px;
+    background: url('../Images/background/hunter_online_portada2.jpg');
+    /*margin-bottom: 24px;*/
+    /*background-color: rgba(26, 26, 26, 0.4);*/ /*background-color: #71171B;*/
+    /*background: url('../Images/background/Rojo_Superior.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.2) inset;*/
+}
+
+.logo_image
+{
+    float: left;
+    width: 350px;
+    margin-left: 0px;
+    margin-top: 15px;
+    text-align: left;
+    background-image: url('../images/background/Logo_Hunter.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 80px;
+}
+
+.login_sec_animation_anterior
+{
+    float: left;
+    width: 260px;
+    height: 176px;
+    margin: 5px 5px;
+    padding: 10px 0 10px 22px;
+}
+
+.login_sec_animation
+{
+    float: left;
+    width: 625px;
+    height: 200px;
+    /*margin: 5px 5px;*/
+    /*padding: 10px 0 10px 22px;*/
+    padding: 0px 40px 0px 40px;
+}
+
+.login
+{
+    margin: 0 auto;
+    width: 280px;
+    margin-top: 120px;
+}
+
+.login_sec
+{
+    float: left;
+    margin: auto auto;
+    width: 1024px;
+    height: 230px;
+}
+
+.login_sec_001
+{
+    float: left;
+    width: 250px;
+    height: 320px;
+    padding-left: 45px;
+    /*background-color: #0E181C;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    border: 0px #525252 solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.1) inset;*/
+}
+
+.login_sec_002
+{
+    float: left;
+    width: 220px;
+    height: 140px;
+    margin: 0px 5px;
+    padding: 0px 0 0px 22px;
+}
+
+.login_sec_0021
+{
+    float: left;
+    width: 220px;
+    height: 170px;
+    margin: 0px 5px;
+    padding: 0px 0 0px 22px;
+}
+
+.login_sec_003
+{
+    float: left;
+    width: 220px;
+    height: 50px;
+    margin: 0px 5px;
+    padding: 0px 0 0px 22px;
+    /*color: #FFFFFF;*/
+    color: #FF0000;
+}
+
+.login_sec_0031
+{
+    float: left;
+    width: 220px;
+    height: 70px;
+    margin: 0px 5px;
+    padding: 0px 0 0px 22px;
+    color: #FF0000;
+}
+
+/*.login_sec_004
+{
+    float: left;
+    width: 300px;
+    height: 20px;
+    margin: 0px 0px;
+    padding-left: 10px;
+    color: #A40B0B;
+}*/
+
+.login_sec_004
+{
+    float: left;
+    width: 1007px;
+    height: 20px;
+    margin: 5px 5px;
+    padding: 5px 0 5px 10px;
+    font-weight: bold;
+    color: Maroon;
+    font-size: 16px;
+}
+
+.login_sec_004_1
+{
+    float: left;
+    width: 1007px;
+    height: 30px;
+    text-align:center;
+    font-weight: bold;
+    margin: 5px 5px;
+    color: Maroon;
+    font-size: 16px;
+    margin-top:-8px;
+    background:url(../images/background/NavegatorWrong.png);
+    background-repeat: repeat-x;
+}
+
+.login_sec_005
+{
+    float: left;
+    width: 220px;
+    height: 20px;
+    margin: 0px 5px;
+    padding: 0px 0 0px 22px; /* background-position: left;     background-image: url('../images/background/Flecha_Derecha.png');     background-repeat: no-repeat;*/
+}
+
+.login_sec_006
+{
+    float: right;
+    width: 300px;
+    height: 411px;
+    margin: 0 15px 0 0;
+}
+
+.login_sec_007
+{
+    float: left;
+    width: 130px;
+    height: 20px;
+    padding: 0px 0 0px 73px;
+}
+
+.login_sec_008
+{
+    float: left;
+    width: 90px;
+    height: 20px;
+    padding: 0px 0 0px 115px;
+}
+
+.login_sec_009
+{
+    float: left;
+    width: 120px;
+    height: 20px;
+}
+
+.login_sec_010
+{
+    float: left;
+    width: 100px;
+    height: 20px;
+}
+
+.login_sec_011
+{
+    float: left;
+    width: 60px;
+    height: 30px;
+    padding: 5px 0 0px 120px;
+}
+
+.login_img_002
+{
+    float: left;
+    width: 315px;
+    margin: 5px 5px;
+    text-align: center;
+    height: 80px;
+}
+
+.login_secc_ssl_certificado
+{
+    float: left;
+    /*width: 505px;*/
+    width: 150px;
+    height: 76px;
+}
+
+body
+{
+    font-size: 14px;
+    color: Black;
+    padding: 10px;
+    margin: 0px;
+    font-family: 'Open Sans' , Calibri, Candara, Arial, sans-serif; /*background-color:#C6C6C6;*/
+    /*background-color: #5B5757;*/
+    background-color: white;
+}
+
+body2
+{
+    font-size: 14px;
+    color: Black;
+    padding: 10px;
+    margin: 0px;
+    font-family: 'Open Sans' , Calibri, Candara, Arial, sans-serif;
+}
+
+h3
+{
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
+
+#footer
+{
+    float: left;
+    width: 1024px;
+    height: 56px;
+    /*background: url('../Images/background/Rojo_Inferior.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.8;
+    filter: alpha(opacity=80);*/
+}
+
+.copyright
+{
+    float: left;
+    margin: 0px;
+    padding: 10px 0 0 20px;
+    text-align: left;
+    /*width: 488px;*/
+    width: 820px;
+    height: 64px;
+    color: #FFFFFF;
+    font-size:11px;
+}
+
+.footer_image
+{
+    float: left;
+    margin: 0px;
+    padding: 5px 0 0 20px;
+    text-align: left;
+    width: 280px;
+    height: 50px;
+}
+
+.content_user
+{
+    float: right;
+    width: 300px;
+    margin-right: 5px;
+    margin-top: 0px;
+    height: 110px;
+    padding: 5px 5px;
+    margin-left: 10px;
+    background-position: left;
+    background-image: url('../images/background/Redes_1800_Call_Center.png');
+    background-repeat: no-repeat;
+}
+
+.boton_login
+{
+    font-weight: bold;
+    font-size: x-small;
+    text-align: center;
+    /*color: White;*/
+    color: Black;
+    /*background-color: #1F1F1F;*/
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    /*box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.9) inset;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.goButtonloginHov .rbText
+{
+    /*color: Yellow !important;*/
+    color: #1F1F1F !important;
+}

@@ -1,0 +1,415 @@
+﻿.Promocionesdetallepagineo
+{
+    width:              100%;
+    height:             24px;
+    margin-top:         0px;
+    float:              left;
+    position:           relative;
+    font-family:        Arial;
+    font-size:          12px;
+}
+
+.Promocionesdetalleanterior
+{
+    width:              24px;
+    height:             24px;
+    position:           relative;
+    float:              left;
+    margin:             0px 0px 0px 50px;
+    background:         url('../images/icons/24x24/paginaanterior.png');
+    background-repeat:  no-repeat;
+}
+
+.Promocionesdetallesiguiente
+{
+    width:              74px;
+    height:             24px;
+    position:           relative;
+    float:              right;
+    margin:             0px 0px 0px 0px;
+    background:         url('../images/icons/24x24/paginasiguiente.png') no-repeat;
+}
+
+.Promocionesdetallemensajeanterior
+{
+    width:              110px;
+    height:             19px;
+    position:           relative;
+    float:              left;
+    margin:             0px 0px 0px 0px;
+    padding:            5px 0px 0px 5px;
+}
+
+.Promocionesdetallemensajesiguiente
+{
+    width:              110px;
+    height:             19px;
+    position:           relative;
+    float:              right;
+    margin:             0px 0px 0px 0px;
+    padding:            5px 5px 0px 0px;
+    text-align:         right;
+}
+
+.PromocionesdetalleImagen
+{
+    width:              225px;
+    height:             225px;
+    margin:             10px 0px 0px 50px;
+    float:              left;
+    position:           relative;
+    border-color:       #E5F1FB;
+    border-width:       0px;
+    border-style:       solid;
+}
+
+.PromocionesdetalleImagenInfocodigo
+{
+    width:              105px;
+    height:             110px;
+    margin:             12px 10px 0px 0px;
+    float:              right;
+    position:           relative;
+    border-width:       0px;
+}
+
+.PromocionesdetalleImagenInfocodigoflechaizquierda
+{
+    width:              0; 
+	height:             0; 
+	position:           relative;
+	float:              left;
+	margin:             65px 0px 0px 0px;
+	border-top:         15px solid transparent;
+	border-bottom:      15px solid transparent;
+	border-right:       15px solid rgba(255,255,255,0.35);
+}
+
+.PromocionesdetalleImagenInfodetalle
+{
+    width:              90px; 
+	height:             110px; 
+	position:           relative;
+	float:              right;
+	margin:             0px 0px 0px 0px;
+	background:         rgba(255,255,255,0.35);
+}
+
+.PromocionesdetalleImagenInfodetalleImagen
+{
+    width:              23px;
+    height:             25px;
+    margin:             20px 28px 0px 0px;
+    padding:            9px 0px 0px 11px;
+    float:              right;
+    position:           relative;
+    background-color:   White;                 
+    font-size:          1.5em;
+    border-radius:      150px;
+}
+
+.PromocionesdetalleImagenInfodetalletexto
+{
+    width:              90px;
+    height:             14px;
+    margin:             5px 0px 0px 0px;
+    float:              left;
+    position:           relative;
+    background-color:   Transparent;                 
+    font-size:          1.1em;
+    text-align:         center;
+    color:              White;
+}
+
+.PromocionesdetalleImagenInfodetallePromo
+{
+    width:              90px;
+    height:             25px;
+    margin:             10px 0px 0px 0px;
+    float:              left;
+    position:           relative;
+    background-color:   Transparent;                 
+    font-size:          3em;
+    text-align:         center;
+    color:              White;
+}
+
+.PromocionesdetalleImagenInfo
+{
+    width:              190px;
+    height:             90px;
+    margin:             0px 0px 0px 25px;
+    float:              left;
+    position:           relative;            
+    font-size:          3em;
+    font-family:        'Open Sans' , Calibri, Candara, Arial, sans-serif;
+    line-height:        24px;
+    text-align:         left;
+    color:              White;
+}
+
+.Promocionesdetalleinformacion
+{
+    width:              200px;
+    height:             110px;
+    margin:             25px 0px 0px 15px;
+    float:              left;
+    position:           relative;
+    font-family:        Arial;
+    top:                0px;
+    left:               0px;
+}
+
+.PromocionesdetalleTitulo
+{
+    width:              95%;
+    height:             40px;
+    margin:             5px 0px 0px 3px;
+    float:              left;
+    position:           relative;
+    font-size:          14px;
+    color:              #444444;
+    line-height:        13px;
+}
+
+.Promocionesdetallevalortitulo
+{
+    width:              95%;
+    height:             12px;
+    margin:             3px 0px 0px 3px;
+    float:              left;
+    position:           relative;
+    font-size:          10px;
+    font-weight:        bold;
+    color:              #222222;
+}
+
+.Promocionesdetallevalor
+{
+    width:              80%;
+    height:             18px;
+    margin:             5px 0px 0px 30px;
+    float:              left;
+    position:           relative;
+    font-size:          22px;
+    font-weight:        bold;
+    color:              #4891C3;
+    text-align:         left;
+}
+
+.PromocionesdetalleValorNormal
+{
+    width:              80%;
+    height:             10px;
+    margin:             0px 0px 0px 30px;
+    float:              left;
+    position:           relative;
+    font-size:          10px;
+    font-weight:        bold;
+    color:              #222222;
+    text-align:         left;
+}
+
+.Promocionesdetallecantidadtitulo
+{
+    width:              70px;
+    height:             24px;
+    margin:             35px 0px 0px 3px;
+    float:              left;
+    position:           relative;
+    font-size:          14px;
+    color:              #444444;
+}
+
+.Promocionesdetallecantidad
+{
+    width:              35px;
+    height:             20px;
+    margin:             32px 0px 0px 3px;
+    padding:            0px 0px 0px 0px;
+    float:              left;
+    position:           relative;
+    font-size:          17px;
+    color:              #444444;
+    text-align:         right;
+    border-color:       #CBDBE8;
+    border-width:       2px;
+    border-style:       solid;
+    border-radius:      5px;
+}
+
+.PromocionesdetallecantidadTextbox
+{
+    width:              100%;
+    height:             100%;
+    margin:             0px 0px 0px 0px;
+    padding:            0px 0px 0px 0px;
+    float:              left;
+    font-size:          18px;
+    color:              #444444;
+    text-align:         right;
+    border-width:       0px;
+}
+
+.Promocionesdetallecomprar
+{
+    width:              100px;
+    height:             24px;
+    margin:             15px 28px 0px 0px;
+    float:              left;
+    position:           relative;
+    border-radius:      1px;
+    font-size:          0.76em;
+    background-color:   #2E2E2E;
+    color:              White;
+}
+
+.PromocionesdetallecomprarImagen
+{
+    width:              100px;    
+    height:             24px;   
+    background:         url('../images/icons/24x24/CarritoPromocion24x24.png');
+    background-repeat:  no-repeat;
+    font-size:          10px;
+    Color:              #FFFFFF;
+}
+
+.PromocionesdetallecomprarImagen:hover
+{
+    width:              100px;   
+    height:             20px;   
+    background:         url('../images/icons/24x24/CarritoPromocion24x24.png');
+    background-repeat:  no-repeat;
+    font-size:          10px;
+    Color:              #DCDCDC;
+}
+
+.Promocionesdetallevalidohasta
+{
+    width:              120px;
+    height:             12px;
+    margin:             2px 0px 0px 3px;
+    float:              left;
+    position:           relative;
+    font-size:          8px;
+    color:              #020202;
+}
+
+.Promocionesdetallezonamensajes
+{
+    width:              250px;
+    height:             130px;
+    margin:             40px 50px 0px 3px;
+    padding:            20px 0px 0px 40px;
+    float:              right;
+    position:           relative;
+    border-color:       #F5FAFA;
+    border-width:       0px;
+    border-style:       solid;
+}
+
+.PromocionesdetalleTab
+{
+    width:              920px;
+    height:             240px;
+    margin:             -25px 0px 0px 50px;
+    position:           relative;
+    float:              left;
+    text-align:         justify;
+    -webkit-box-shadow: 3px 3px 5px #C3DBEB;
+    -moz-box-shadow:    3px 3px 5px #C3DBEB;
+    border-top-right-radius:    10px 10px;
+}
+
+.PromocionesdetalleTabinactivo
+{
+    width:              150px;
+    height:             10px;
+    padding:            10px;
+    color:              #8F99A2;
+    font-size:          15px;
+    text-align:         center;
+    background:         rgb(236,243,249);
+    background:         -moz-linear-gradient(top,  rgba(236,243,249,1) 0%, rgba(172,200,222,1) 100%);
+    background:         -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(236,243,249,1)), color-stop(100%,rgba(172,200,222,1)));
+    background:         -webkit-linear-gradient(top,  rgba(236,243,249,1) 0%,rgba(172,200,222,1) 100%);
+    background:         -o-linear-gradient(top,  rgba(236,243,249,1) 0%,rgba(172,200,222,1) 100%);
+    background:         -ms-linear-gradient(top,  rgba(236,243,249,1) 0%,rgba(172,200,222,1) 100%);
+    background:         linear-gradient(to bottom,  rgba(236,243,249,1) 0%,rgba(172,200,222,1) 100%);
+    filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#ECF3F9', endColorstr='#ACC8DE',GradientType=0 );
+    border-top-right-radius:    10px 10px;
+    border-top-left-radius:     10px 10px;
+}
+
+.PromocionesdetalleTabactivo
+{
+    width:              150px;
+    height:             10px;
+    padding:            10px;
+    color:              #DCEEFF;
+    font-size:          15px;
+    text-align:         center;
+    background:         rgb(228,240,254);
+    background:         -moz-linear-gradient(top,  rgba(228,240,254,1) 0%, rgba(9,104,160,1) 100%);
+    background:         -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(228,240,254,1)), color-stop(100%,rgba(9,104,160,1)));
+    background:         -webkit-linear-gradient(top,  rgba(228,240,254,1) 0%,rgba(9,104,160,1) 100%);
+    background:         -o-linear-gradient(top,  rgba(228,240,254,1) 0%,rgba(9,104,160,1) 100%);
+    background:         -ms-linear-gradient(top,  rgba(228,240,254,1) 0%,rgba(9,104,160,1) 100%);
+    background:         linear-gradient(to bottom,  rgba(228,240,254,1) 0%,rgba(9,104,160,1) 100%);
+    filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f0fe', endColorstr='#0968a0',GradientType=0 );
+    border-top-right-radius:    10px 10px;
+    border-top-left-radius:     10px 10px;
+}
+
+.modalContenedorPrincipal
+{
+    width:              440px;
+    height:             auto;
+    background-color:   Transparent;   
+}
+
+.modalContenedorTitulo
+{
+    width:              400px;
+    height:             40px;
+    margin:             5px 0px 0px 20px;
+    position:           relative;
+    float:              left;
+    text-align:         left;
+    font-size:          14px;
+    font-family:        Arial;
+    color:              #444444;
+}
+
+.modalContenedorControl
+{
+    width:              400px;
+    height:             auto;
+    margin:             5px 0px 0px 20px;
+    position:           relative;
+    float:              left;
+    text-align:         left;
+    font-size:          12px;
+    font-family:        Arial;
+    color:              #444444;
+}
+
+.modalContenedorBoton
+{
+    width:              80px;
+    height:             25px;
+    margin:             5px 18px 0px 0px;
+    padding:            5px 0px 0px 0px;
+    float:              right;
+    text-align:         center;
+    font-size:          11px;
+    background:         rgb(247,247,247);
+    background:         -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(221,221,221,1) 100%);
+    background:         -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(100%,rgba(221,221,221,1)));
+    background:         -webkit-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(221,221,221,1) 100%); 
+    background:         -o-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(221,221,221,1) 100%);      
+    background:         -ms-linear-gradient(top,  rgba(247,247,247,1) 0%,rgba(221,221,221,1) 100%);     
+    background:         linear-gradient(to bottom,  rgba(247,247,247,1) 0%,rgba(221,221,221,1) 100%);   
+    filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#dddddd',GradientType=0 );
+    border-radius:      5px;
+}

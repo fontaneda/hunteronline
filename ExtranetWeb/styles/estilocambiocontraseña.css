@@ -1,0 +1,369 @@
+﻿
+
+#container_flotante
+{
+    padding: 0px;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    /*background: url('../Images/background/Fondo_adicional.jpg');*/
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.form-control
+{
+    display: block;
+    width: 100%;
+    height: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input_class 
+{
+  border-radius: 5px;
+}
+
+.amarillo 
+{
+	background: url('../images/background/amarillo.png') !important;
+    border-color:#fd1129;
+    background-color: #23E363;
+    font-style: italic;
+    color:Fuchsia;     
+}
+
+.gris 
+{
+	background: url('../images/background/naranja.png') !important;
+    border-color:#fd1129;
+    background-color: #23E363;
+    font-style: italic;
+     color:Fuchsia;     
+}
+
+.cambio_clave_titulo
+{
+    float:                  left;
+    margin:                 5px 0 0 30px;
+    padding:                5px 0 0 5px;
+    text-align:             left;
+    font-family:            Verdana;
+    font-size:              12px;
+    color:                    #292929;
+    /*color:                  #666666;
+    background-color:       #FFFFFF;*/
+}
+
+.element_clave
+{
+    /*-webkit-backface-visibility: visible;
+    -webkit-transform: none;*/
+    height: 220px;
+    width: 460px; 
+    /*left: 231px;
+    position: absolute;
+    top: 97px;
+    visibility: visible;*/
+    z-index: 30001 !important;
+    background: url('../images/background/amarillo.png') !important;
+    /*background: url('../images/background/rojo.png') !important;*/
+    font-family: Verdana ;
+    font-size: 18px ;
+    color: #FFFFFF;
+    /*color: #333333;*/
+}
+
+.cambio_clave_linea
+{
+    float:                  left;
+    margin:                 5px 0 0 5px;
+    /*padding:                5px 0 0 5px;*/
+    text-align:             left;
+    font-family:            Verdana;
+    /*font-size:              12px;*/
+    width: 400px;
+    height: 2px;
+    /*color:                  #666666;*/
+}
+
+.regusu_bloque_col3_clave
+{
+    float: left;
+    width: 15px;
+    /*width: 210px;*/
+    height: 22px;
+    margin-top:15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+h1_clave                                                  
+{
+    /*color: white;*/
+    /*color: #C99714;*/
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    /*width:220px;*/
+    /*float:right;*/
+}
+
+.regusu_cambio_clave01
+{
+    float: left;
+    width: 250px;
+    height: 30px;   
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.regusu_cambio_clave02 
+{
+	float: left;
+    width: 160;
+    height: 30px;
+    font-family: Verdana;
+    font-size:   12px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 52px;
+}
+
+.regusu_cambio_clave03
+{
+	float: left;
+    width: 20;
+    height: 34px;
+    font-family: Verdana;
+    font-size:   12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+
+.regusu_bloque_clave2
+{
+    float: left;
+    /*width: 100%;
+    height: 30px;*/
+    padding-left: 250px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+.regusu_secc_clave_boton
+{
+    float: left;
+    width: 85px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-right:5px;
+    /*text-align: right;*/
+}
+
+.regusu_secc_clave_boton1
+{
+    float: left;
+    width: 300px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left:5px;
+    text-align: left;
+    
+}
+
+.regusu_secc_clave_boton2
+{
+    float: left;
+    width: 85px;
+    height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left:1px;
+    /*text-align: left;*/
+    
+}
+
+.regusu_secc_clave_text01
+{
+    float: left;
+    width: 290px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.content_mensaje_cambio_clave
+{
+    float: left;
+    width: 140px;
+    maximunsize: 140px;
+    color: Red;
+    autosize: "true";
+    word-wrap: normal; 
+    word-break: break-all;
+    margin-left: 50px;
+    /*background-color:       #666666;*/
+}
+
+.content_clave
+{
+    float: left;
+    width: 350px;
+    height: 34px;   
+    /*margin-bottom: 5px;
+    margin-left: 5px;*/
+}
+
+.regsoporte_text01
+{
+
+    width: 430px;
+    height: 90px;
+    padding-left:5px;
+}    
+    /*margin-bottom: 5px;
+.column_cell_text2
+{
+    float: left;
+    height: 120px;
+    width: 730px;
+    padding: 5px 5px;
+    color: Red;
+    font-weight: bold;
+    font-size: x-small;
+*/
+    /*margin-left: 5px;*/
+ 
+.soporte_label01
+{
+    float: left;
+    width: 440px;
+    height: 22px;
+    text-align:center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3A3A3A
+}
+
+.content_regresar_soporte_icon
+{
+    float:                  right;
+    width:                  250px;
+    margin-right:           1px;
+}
+
+.regusu_secc_soporte_regresar
+{
+   float:                   left;
+    width:                  884px;
+    height:                 32px;
+    margin-bottom:          5px;
+    margin-left:            5px;
+}
+
+.admin_sec_soporte_004
+{
+    float: left; 
+    width: 155px; 
+    height: 20px; 
+    margin: 5px 3px 0 5px; /*background-color: brown;*/ 
+    font-size: small; 
+    font-weight: bold; 
+    padding: 3px 0 2px 5px;
+}
+
+.admin_sec_soporte_012
+{
+    float: left; 
+    width: 435px; 
+    height:  60px; 
+    margin: 5px 3px 0 5px;/* background-color: brown;*/ 
+    font-size: small; 
+    font-weight: bold; 
+    padding-top: 2px; color: Black;
+}
+
+.soporte_subtitulo_documento
+{    
+  float: left;    
+  height: 18px;    
+  width: 200; 
+  font-family:"Modata", Tahoma, Arial, sans-serif;    	
+  font-weight:normal;    	
+  font-size:10px; /*background-color: brown;*/
+}      
+
+.regusu_secc_soporte
+{
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    /*width: 660px;*/
+    width: 460px;
+    /*height: 325px;*/
+    height: 380px;
+    /*border-right: 1px solid gray;*/
+}
+
+.admin_sec_control_011
+{
+    float: left; 
+    width: 520px; 
+    height:  80px; 
+     margin: 5px 3px 0 5px; /*background-color: brown;*/
+    font-size: small; 
+    font-weight: bold; 
+    padding-top: 2px; color: Black;
+}
+
+.regusu_soporte_col3_parrafo
+{
+    float: left;
+    width: 15px;
+    /*width: 210px;*/
+    height: 22px;
+     margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.regusu_soporte_col4_parrafo
+{
+    float: left;
+    width: 520px;
+    height: 35px;
+     margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.regusu_soporte_col5_parrafo
+{
+    float: left;
+    width: 520px;
+    /*width: 210px;*/
+    height: 25px;
+     margin-bottom: 5px;
+    margin-left: 5px;
+}
+

@@ -1,0 +1,41 @@
+﻿a.linkcss:link{
+    color: #878787;
+}
+a.linkcss:visited, a.cssa:active{
+    color: #006666;
+}
+a.linkcss:hover, a.cssa:active{
+    color: #434141;
+}
+a.linkcss:active{
+    color: #878787;
+}
+.content_renovacion_confirmardato_gridcontrol_col1{
+    width:400px;
+    float:left;
+    position:relative;
+}
+.content_renovacion_confirmardato_gridcontrol_col2{
+    width:575px;
+    float:left;
+    position:relative;
+}
+.column04_cell_button2{
+    width:20px;
+    float: left;
+}
+.content_renovacion_formapago_informacion_textbox2{
+    width:255px;
+    float: left;
+    height: 25px;
+}
+.content_renovacion_formapago_informacion_label_ven{
+    float: left;
+    width: 120px;
+    height: 12px;
+    margin: 2px 1px 2px 10px;
+    padding: 3px 1px 0 1px;
+    text-align: left;
+    position:relative;
+}    
+    

@@ -1,0 +1,473 @@
+﻿/*vehiculoespecifico page*/
+#vehespcontenedor_maestro
+{
+    float: left;
+    width: 1020px;
+    height: 600px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vehesptitulo
+{
+    float: left;
+    height: 32px;
+    width: 1003px;
+    /*text-align: justify;*/
+    margin: 7px 5px;
+    padding-left: 5px;
+    padding-top: 7px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chequeo_tit1
+{
+    float: left;
+    height: 28px;
+    width: 737px;
+    padding-left: 0px;
+    padding-top: 5px;
+    background-position: left top;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vehespinformacion
+{
+    float: left;
+    height: 500px;
+    width: 995px;
+    text-align: justify;
+    margin: 3px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+}
+
+.titulocabecera
+{
+    float: left;
+    height: 28px;
+    width: 990px;
+    text-align: justify;
+    margin: 3px 3px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    /*border: 1px solid #999;
+    border-radius: 5px;*/
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 44, 49, 0.1);
+}
+
+.vehesptitulo_informacion
+{
+    float: left;
+    height: 30px;
+    width: 988px;
+    margin: 5px 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.vehespinformacion_1
+{
+    float: left;
+    height: 440px;
+    width: 993px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+    /*border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;*/
+}
+
+.titulo_11
+{
+    float: left;
+     color: #333333;
+    height: 30px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+    font-weight: bold;
+}
+
+.dato_11
+{
+    float: left;
+    height: 30px;
+    width: 320px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.titulo_21
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.dato_21
+{
+    float: left;
+    height: 30px;
+    width: 280px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.titulo_12
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.dato_12
+{
+    float: left;
+    height: 30px;
+    width: 320px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_22
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+/*.dato_22
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_13
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.dato_13
+{
+    float: left;
+    height: 30px;
+    width: 320px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_23
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.dato_23
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_14
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.dato_14
+{
+    float: left;
+    height: 30px;
+    width: 320px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_15
+{
+    float: left;
+    height: 20px;
+    width: 140px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+/*.dato_15
+{
+    float: left;
+    height: 30px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}*/
+
+.titulo_16
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.dato_16
+{
+    float: left;
+    height: 30px;
+    width: 690px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.titulo_24
+{
+    float: left;
+    height: 20px;
+    width: 170px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.dato_24
+{
+    float: left;
+    height: 30px;
+    width: 550px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehesptitulo_nuevopropietario
+{
+    float: left;
+    color:#333333;
+    font-weight:bold;
+    height: 25px;
+    width: 115px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.vehesptxt_nuevopropietario
+{
+    float: left;
+    height: 25px;
+    width: 180px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehesptitulo_nuevotelefono
+{
+    float: left;
+    color:#333333;
+    font-weight:bold;
+    height: 25px;
+    width: 80px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.vehesptxt_nuevotelefono
+{
+    float: left;
+    height: 25px;
+    width: 220px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.titulo_nuevotelefono
+{
+    float: left;
+    height: 25px;
+    width: 50px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehespdar_baja
+{
+    float: left;
+    height: 30px;
+    width: 300px;
+    margin: 2px 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-position: left top;
+}
+
+.vehespbotom_enviar
+{
+    float: left;
+    height: 100px;
+    width: 950px;
+    padding-left: 2px;
+    padding-top: 150px;
+    background-position: right;
+}
+
+.vehesppiepagina
+{
+    float: left;
+    height: 28px;
+    width: 700px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.vehesppiepagina_botones
+{
+    float: left;
+    height: 28px;
+    width: 260px;
+    text-align: justify;
+    margin: 5px 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-position: left top;
+    border: 0px solid rgb(218, 218, 218);
+}
+
+.chequeo_boton
+{
+    float: left;
+    height: 25px;
+    width: 81px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.vehesptitulo_informacion_1
+{
+    float: left;
+    height: 30px;
+    width: 300px;
+    margin: 5px 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    background-position: left top;
+}
+
+.column01_cell_label_01
+{
+    float: left;
+    color: #333333;
+    height: 20px;
+    width: 140px;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.column01_cell_label_02
+{
+    float: left;
+    color: #333333;
+    height: 20px;
+    width: 100px;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.column01_cell_label_03
+{
+    float: left;
+    color: #333333;
+    height: 20px;
+    width: 120px;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: right;
+}
